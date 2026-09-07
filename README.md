@@ -6,7 +6,7 @@ A modern, responsive personal portfolio website showcasing my professional backg
 
 Visit my portfolio:
 
-**[Portfolio Website](YOUR_VERCEL_URL)**
+**https://commander-portfolio.vercel.app**
 
 ## 📌 About the Project
 
@@ -113,9 +113,8 @@ Areas of interest:
 
 ## 📫 Connect With Me
 
-* Portfolio: **YOUR_VERCEL_URL**
+* Portfolio: **https://commander-portfolio.vercel.app**
 * GitHub: **https://github.com/commanderwondwossen**
-* LinkedIn: **YOUR_LINKEDIN_URL**
 
 ---
 
