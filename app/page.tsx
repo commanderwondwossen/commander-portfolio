@@ -906,7 +906,7 @@ export default function Home() {
                     </span>
                     <span>
                       <span className="block text-xs text-slate-500">GitHub</span>
-                      github.com/commanderwondwossen
+                      https://github.com/commanderwondwossen
                     </span>
                   </a>
                 </div>
