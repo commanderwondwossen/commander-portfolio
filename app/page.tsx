@@ -898,7 +898,7 @@ export default function Home() {
                   </a>
 
                   <a
-                    href="#"
+                    href="https://github.com/commanderwondwossen"
                     className="flex items-center gap-4 text-slate-300 transition hover:text-cyan-400"
                   >
                     <span className="flex h-11 w-11 items-center justify-center rounded-xl border border-white/10 bg-white/5">
@@ -906,7 +906,7 @@ export default function Home() {
                     </span>
                     <span>
                       <span className="block text-xs text-slate-500">GitHub</span>
-                      https://github.com/commanderwondwossen
+                      github.com/commanderwondwossen
                     </span>
                   </a>
                 </div>
