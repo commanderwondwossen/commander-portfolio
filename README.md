@@ -1,36 +1,122 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Commander Wondwossen Atnafu — Professional Portfolio
 
-## Getting Started
+A modern, responsive personal portfolio website showcasing my professional background, technical expertise, projects, education, certifications, and experience in ICT and IT infrastructure.
 
-First, run the development server:
+## 🌐 Live Website
+
+Visit my portfolio:
+
+**[Portfolio Website](YOUR_VERCEL_URL)**
+
+## 📌 About the Project
+
+This website was developed to provide a professional online presence and showcase my experience and capabilities in:
+
+* IT Infrastructure
+* Network Administration
+* Systems Administration
+* Web Development
+* Cybersecurity
+* Artificial Intelligence
+* ICT Management
+
+## 🛠️ Technologies Used
+
+* Next.js
+* React
+* TypeScript
+* Tailwind CSS
+* Framer Motion
+* HTML5
+* CSS3
+
+## ✨ Features
+
+* Responsive design for desktop, tablet, and mobile
+* Modern professional UI
+* Smooth navigation
+* Animated sections
+* Professional experience section
+* Education and certifications
+* Project showcase
+* Contact section
+* SEO metadata
+* Mobile navigation
+
+## 📂 Project Structure
+
+```text
+commander-portfolio/
+├── app/
+│   ├── layout.tsx
+│   ├── page.tsx
+│   └── globals.css
+├── components/
+│   ├── Navbar.tsx
+│   └── Reveal.tsx
+├── public/
+└── package.json
+```
+
+## 🚀 Getting Started
+
+Clone the repository:
+
+```bash
+git clone https://github.com/commanderwondwossen/commander-portfolio.git
+```
+
+Go to the project directory:
+
+```bash
+cd commander-portfolio
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📦 Build for Production
 
-## Learn More
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 👨‍💻 Author
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Commander Wondwossen Atnafu**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+ICT & IT Infrastructure Professional
 
-## Deploy on Vercel
+Areas of interest:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+* Networking
+* Systems Administration
+* IT Infrastructure
+* Web Development
+* Cybersecurity
+* Artificial Intelligence
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📫 Connect With Me
+
+* Portfolio: **YOUR_VERCEL_URL**
+* GitHub: **https://github.com/commanderwondwossen**
+* LinkedIn: **YOUR_LINKEDIN_URL**
+
+---
+
+⭐ If you find this project useful, feel free to explore the repository.
