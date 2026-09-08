@@ -23,7 +23,7 @@ export default function Navbar() {
           onClick={() => setIsOpen(false)}
           className="text-xl font-bold tracking-wide"
         >
-          WONDWOSSEN<span className="text-cyan-400">.</span>
+          Commander<span className="text-cyan-400">.</span>
         </a>
 
         {/* Desktop Navigation */}

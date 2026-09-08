@@ -15,7 +15,7 @@ export default function Home() {
           <Reveal direction="left">
           <div>
             <p className="mb-5 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-400">
-              ICT & IT Infrastructure Professional
+              Information Technology Professional
             </p>
 
             <h1 className="text-5xl font-bold leading-tight tracking-tight sm:text-6xl lg:text-7xl">
@@ -24,7 +24,7 @@ export default function Home() {
               Technology Solutions.
             </h1>
 
-            <p className="mt-7 max-w-2xl text-lg leading-8 text-slate-400">
+            <p className="mt-7 max-w-2xl text-justify text-lg leading-8 text-slate-400">
               I design, implement, and manage secure and scalable technology
               solutions across networking, infrastructure, systems,
               software, and ICT management.
@@ -116,20 +116,20 @@ export default function Home() {
                 <span className="text-cyan-400"> strategic mindset.</span>
               </h2>
 
-              <p className="mt-7 leading-8 text-slate-400">
+              <p className="mt-7 text-justify leading-8 text-slate-400">
                 I am an ICT professional with experience across IT infrastructure,
                 networking, systems administration, software development, and
                 technology management.
               </p>
 
-              <p className="mt-5 leading-8 text-slate-400">
+              <p className="mt-5 leading-8 text-justify text-slate-400">
                 My approach combines technical problem-solving with business and
                 organizational thinking. I focus on building technology environments
                 that are secure, reliable, scalable, and aligned with organizational
                 objectives.
               </p>
 
-              <p className="mt-5 leading-8 text-slate-400">
+              <p className="mt-5 text-justify leading-8 text-slate-400">
                 From network architecture and server administration to modern web
                 applications and digital transformation initiatives, I enjoy solving
                 complex technology challenges.
@@ -148,7 +148,7 @@ export default function Home() {
               <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur">
                 <div className="mb-8 flex items-center gap-5">
                   <div className="flex h-20 w-20 items-center justify-center rounded-2xl bg-cyan-400/10 text-2xl font-bold text-cyan-400">
-                    WA
+                    CW
                   </div>
 
                   <div>
@@ -156,17 +156,18 @@ export default function Home() {
                       Commander Wondwossen Atnafu
                     </h3>
                     <p className="mt-1 text-sm text-slate-400">
-                      ICT & IT Infrastructure Professional
+                      Information Technology Professional
                     </p>
                   </div>
                 </div>
 
                 <div className="grid grid-cols-2 gap-4">
                   {[
-                    ["19+", "Years Experience"],
+                    ["20+", "Years Experience"],
                     ["MSc", "Information Technology"],
                     ["BSc", "Information Technology"],
-                    ["6+", "Technology Domains"],
+                    ["Diploma(10+3)", "Information Technology"],
+                    ["Multiple", "Technology Domains"],
                   ].map(([number, label]) => (
                     <div
                       key={label}
@@ -198,7 +199,7 @@ export default function Home() {
               <span className="text-cyan-400"> multiple domains.</span>
             </h2>
 
-            <p className="mt-6 leading-8 text-slate-400">
+            <p className="mt-6 text-justify leading-8 text-slate-400">
               A combination of infrastructure, engineering, security, and
               management capabilities enables me to approach technology challenges
               from both technical and strategic perspectives.
@@ -251,37 +252,37 @@ export default function Home() {
               },
             ].map((item, index) => (
   <Reveal key={item.number} delay={index * 0.08}>
-    <div className="group rounded-3xl border border-white/10 bg-white/[0.03] p-7 transition duration-300 hover:-translate-y-1 hover:border-cyan-400/30 hover:bg-white/[0.05]">
-      <div className="flex items-center justify-between">
-        <span className="text-sm font-semibold text-cyan-400">
-          {item.number}
-        </span>
+  <div className="group flex min-h-[300px] flex-col rounded-3xl border border-white/10 bg-white/[0.03] p-7 transition duration-300 hover:-translate-y-1 hover:border-cyan-400/30 hover:bg-white/[0.05]">
+    <div className="flex items-center justify-between">
+      <span className="text-sm font-semibold text-cyan-400">
+        {item.number}
+      </span>
 
-        <span className="text-2xl opacity-30 transition group-hover:opacity-70">
-          ↗
-        </span>
-      </div>
-
-      <h3 className="mt-7 text-xl font-semibold">
-        {item.title}
-      </h3>
-
-      <p className="mt-4 text-sm leading-7 text-slate-400">
-        {item.description}
-      </p>
-
-      <div className="mt-6 flex flex-wrap gap-2">
-        {item.technologies.map((technology) => (
-          <span
-            key={technology}
-            className="rounded-full bg-slate-900 px-3 py-1 text-xs text-slate-400"
-          >
-            {technology}
-          </span>
-        ))}
-      </div>
+      <span className="text-2xl opacity-30 transition group-hover:opacity-70">
+        ↗
+      </span>
     </div>
-  </Reveal>
+
+    <h3 className="mt-7 text-xl font-semibold">
+      {item.title}
+    </h3>
+
+    <p className="mt-4 text-sm text-justify leading-7 text-slate-400">
+      {item.description}
+    </p>
+
+    <div className="mt-6 flex flex-wrap gap-2">
+      {item.technologies.map((technology) => (
+        <span
+          key={technology}
+          className="rounded-full bg-slate-900 px-3 py-1 text-xs text-slate-400"
+        >
+          {technology}
+        </span>
+      ))}
+    </div>
+  </div>
+</Reveal>
 ))}
           </div>
         </div>
@@ -301,7 +302,7 @@ export default function Home() {
                 <span className="text-cyan-400"> case studies.</span>
               </h2>
 
-              <p className="mt-6 leading-8 text-slate-400">
+              <p className="mt-6 text-justify leading-8 text-slate-400">
                 A selection of technology projects demonstrating practical
                 experience in infrastructure, networking, systems, artificial
                 intelligence, and modern web development.
@@ -355,7 +356,7 @@ export default function Home() {
                   </span>
                 </div>
 
-                <p className="mt-5 leading-7 text-slate-400">
+                <p className="mt-5 text-justify leading-7 text-slate-400">
                   Designed a segmented enterprise network architecture supporting
                   multiple departments, secure communication, centralized services,
                   and reliable connectivity.
@@ -411,7 +412,7 @@ export default function Home() {
                   Windows Server & Active Directory
                 </h3>
 
-                <p className="mt-5 leading-7 text-slate-400">
+                <p className="mt-5 text-justify leading-7 text-slate-400">
                   Built a virtualized Windows Server environment implementing Active
                   Directory, DNS, DHCP, organizational units, Group Policy, and
                   centralized identity management.
@@ -462,7 +463,7 @@ export default function Home() {
                   Amharic Document OCR
                 </h3>
 
-                <p className="mt-5 leading-7 text-slate-400">
+                <p className="mt-5 text-justify leading-7 text-slate-400">
                   Developed a deep learning based OCR approach for recognizing
                   printed Amharic documents using computer vision and sequence
                   modeling techniques.
@@ -513,7 +514,7 @@ export default function Home() {
                   Modern Web Application
                 </h3>
 
-                <p className="mt-5 leading-7 text-slate-400">
+                <p className="mt-5 text-justify leading-7 text-slate-400">
                   Developed a responsive modern web application using a
                   component-based architecture, modern frontend technologies, and
                   scalable backend services.
@@ -560,9 +561,10 @@ export default function Home() {
               <span className="text-cyan-400"> technology.</span>
             </h2>
 
-            <p className="mt-6 leading-8 text-slate-400">
-              Professional experience spanning networking, systems administration,
-              software development, ICT infrastructure, and technology leadership.
+            <p className="mt-6 text-justify leading-8 text-slate-400">
+              More than two decades of progressive experience across ICT operations,
+              networking, systems administration, software development, technical
+              support, and ICT leadership.
             </p>
           </div>
 
@@ -570,12 +572,13 @@ export default function Home() {
             {/* Timeline line */}
             <div className="absolute left-[7px] top-2 hidden h-[calc(100%-20px)] w-px bg-white/10 md:block" />
 
-            <div className="space-y-12">
+            <div className="space-y-10">
+
               {/* Experience 1 */}
               <div className="relative grid gap-6 md:grid-cols-[180px_1fr] md:gap-12">
                 <div className="relative">
                   <div className="text-sm font-semibold text-cyan-400">
-                    2024 — Present
+                    2018 E.C. — Present
                   </div>
 
                   <div className="absolute -left-[3px] top-8 hidden h-4 w-4 rounded-full border-4 border-slate-950 bg-cyan-400 md:block" />
@@ -585,32 +588,29 @@ export default function Home() {
                   <div className="flex flex-col justify-between gap-3 sm:flex-row">
                     <div>
                       <h3 className="text-xl font-bold">
-                        ICT / IT Leadership
-                      </h3>
-
-                      <p className="mt-1 text-sm text-cyan-400">
-                        ICT Management & Infrastructure
-                      </p>
+                        ICT Research and Training Professional
+                      </h3>                      
                     </div>
 
                     <span className="h-fit rounded-full bg-cyan-400/10 px-3 py-1 text-xs text-cyan-300">
-                      Leadership
+                      ICT Operations
                     </span>
                   </div>
 
-                  <p className="mt-5 leading-7 text-slate-400">
-                    Responsible for technology planning, infrastructure management,
-                    ICT service delivery, cybersecurity, systems, networking, and
-                    technology improvement initiatives.
+                  <p className="mt-5 text-justify leading-7 text-slate-400">
+                    Supporting reliable digital operations through IT systems and
+                    network troubleshooting, user support, security, backup and
+                    recovery, ICT training, technical documentation, and continuous
+                    technical improvement.
                   </p>
 
-                  <div className="mt-6 flex flex-wrap gap-2">
+                  <div className="mt-4 flex flex-wrap gap-2">
                     {[
-                      "ICT Strategy",
-                      "Infrastructure",
-                      "ITSM",
-                      "Cybersecurity",
-                      "Leadership",
+                      "ICT Support",
+                      "Networking",
+                      "Security",
+                      "Backup & Recovery",
+                      "Training",
                     ].map((item) => (
                       <span
                         key={item}
@@ -627,34 +627,38 @@ export default function Home() {
               <div className="relative grid gap-6 md:grid-cols-[180px_1fr] md:gap-12">
                 <div className="relative">
                   <div className="text-sm font-semibold text-cyan-400">
-                    2015 — 2018
+                    2000 — 2013 E.C.
                   </div>
 
                   <div className="absolute -left-[3px] top-8 hidden h-4 w-4 rounded-full border-4 border-slate-950 bg-cyan-400 md:block" />
                 </div>
 
                 <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-7 transition hover:border-cyan-400/30">
-                  <h3 className="text-xl font-bold">
-                    Network Administration
-                  </h3>
+                  <div className="flex flex-col justify-between gap-3 sm:flex-row">
+                    <div>
+                      <h3 className="text-xl font-bold">
+                        ICT Team Leader (Acting Role)
+                      </h3>                    
+                    </div>
 
-                  <p className="mt-1 text-sm text-cyan-400">
-                    Network Infrastructure & Support
+                    <span className="h-fit rounded-full bg-cyan-400/10 px-3 py-1 text-xs text-cyan-300">
+                      Leadership
+                    </span>
+                  </div>
+
+                  <p className="mt-5 text-justify leading-7 text-slate-400">
+                    Coordinated ICT operations and technical support, supervised
+                    ICT personnel, assigned technical tasks, and provided technical
+                    guidance while supporting infrastructure deployment,
+                    maintenance, and incident resolution.
                   </p>
 
-                  <p className="mt-5 leading-7 text-slate-400">
-                    Managed network infrastructure, connectivity, routing and
-                    switching, network troubleshooting, user support, and
-                    infrastructure availability.
-                  </p>
-
-                  <div className="mt-6 flex flex-wrap gap-2">
+                  <div className="mt-4 flex flex-wrap gap-2">
                     {[
-                      "Cisco",
-                      "Routing",
-                      "Switching",
-                      "TCP/IP",
-                      "Network Support",
+                      "ICT Leadership",
+                      "Team Coordination",
+                      "Infrastructure",
+                      "Technical Support",
                     ].map((item) => (
                       <span
                         key={item}
@@ -671,33 +675,39 @@ export default function Home() {
               <div className="relative grid gap-6 md:grid-cols-[180px_1fr] md:gap-12">
                 <div className="relative">
                   <div className="text-sm font-semibold text-cyan-400">
-                    2005 — 2010
+                    2015 — 2018 E.C.
                   </div>
 
                   <div className="absolute -left-[3px] top-8 hidden h-4 w-4 rounded-full border-4 border-slate-950 bg-cyan-400 md:block" />
                 </div>
 
                 <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-7 transition hover:border-cyan-400/30">
-                  <h3 className="text-xl font-bold">
-                    Systems Development & Administration
-                  </h3>
+                  <div className="flex flex-col justify-between gap-3 sm:flex-row">
+                    <div>
+                      <h3 className="text-xl font-bold">
+                        Network Administration Professional
+                      </h3>                      
+                    </div>
 
-                  <p className="mt-1 text-sm text-cyan-400">
-                    Software & IT Systems
+                    <span className="h-fit rounded-full bg-cyan-400/10 px-3 py-1 text-xs text-cyan-300">
+                      Networking
+                    </span>
+                  </div>
+
+                  <p className="mt-5 text-justify leading-7 text-slate-400">
+                    Administered LAN and WAN environments, configured routers,
+                    switches, and access points, monitored network performance,
+                    resolved connectivity incidents, and supported secure and
+                    reliable network access.
                   </p>
 
-                  <p className="mt-5 leading-7 text-slate-400">
-                    Worked with software systems, databases, application development,
-                    system administration, and technology support while developing a
-                    strong foundation in information technology.
-                  </p>
-
-                  <div className="mt-6 flex flex-wrap gap-2">
+                  <div className="mt-4 flex flex-wrap gap-2">
                     {[
-                      "Software Development",
-                      "Databases",
-                      "Systems",
-                      "Web Technology",
+                      "Cisco",
+                      "Routing",
+                      "Switching",
+                      "LAN/WAN",
+                      "Network Security",
                     ].map((item) => (
                       <span
                         key={item}
@@ -709,6 +719,152 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+
+              {/* Experience 4 */}
+              <div className="relative grid gap-6 md:grid-cols-[180px_1fr] md:gap-12">
+                <div className="relative">
+                  <div className="text-sm font-semibold text-cyan-400">
+                    2005 — 2010 E.C.
+                  </div>
+
+                  <div className="absolute -left-[3px] top-8 hidden h-4 w-4 rounded-full border-4 border-slate-950 bg-cyan-400 md:block" />
+                </div>
+
+                <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-7 transition hover:border-cyan-400/30">
+                  <div className="flex flex-col justify-between gap-3 sm:flex-row">
+                    <div>
+                      <h3 className="text-xl font-bold">
+                        System Development and Administration Professional
+                      </h3>                     
+                    </div>
+
+                    <span className="h-fit rounded-full bg-cyan-400/10 px-3 py-1 text-xs text-cyan-300">
+                      Systems
+                    </span>
+                  </div>
+
+                  <p className="mt-5 text-justify leading-7 text-slate-400">
+                    Administered Windows Server environments and IT infrastructure,
+                    managed user accounts and permissions, monitored system
+                    performance, supported applications and databases, and
+                    implemented backup and recovery procedures.
+                  </p>
+
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    {[
+                      "Windows Server",
+                      "Active Directory",
+                      "DNS",
+                      "DHCP",
+                      "Backup",
+                    ].map((item) => (
+                      <span
+                        key={item}
+                        className="rounded-full bg-slate-900 px-3 py-1.5 text-xs text-slate-400"
+                      >
+                        {item}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              {/* Experience 5 */}
+              <div className="relative grid gap-6 md:grid-cols-[180px_1fr] md:gap-12">
+                <div className="relative">
+                  <div className="text-sm font-semibold text-cyan-400">
+                    2001 — 2005 E.C.
+                  </div>
+
+                  <div className="absolute -left-[3px] top-8 hidden h-4 w-4 rounded-full border-4 border-slate-950 bg-cyan-400 md:block" />
+                </div>
+
+                <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-7 transition hover:border-cyan-400/30">
+                  <div className="flex flex-col justify-between gap-3 sm:flex-row">
+                    <div>
+                      <h3 className="text-xl font-bold">
+                        Software Development and Administration Professional
+                      </h3>
+                    </div>
+
+                    <span className="h-fit rounded-full bg-cyan-400/10 px-3 py-1 text-xs text-cyan-300">
+                      Development
+                    </span>
+                  </div>
+
+                  <p className="mt-5 text-justify leading-7 text-slate-400">
+                    Developed and maintained software applications, supported
+                    application deployment and troubleshooting, worked with
+                    databases and application data, and helped users resolve
+                    application-related issues.
+                  </p>
+
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    {[
+                      "Software Development",
+                      "Databases",
+                      "Application Support",
+                      "System Administration",
+                    ].map((item) => (
+                      <span
+                        key={item}
+                        className="rounded-full bg-slate-900 px-3 py-1.5 text-xs text-slate-400"
+                      >
+                        {item}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              {/* Experience 6 */}
+              <div className="relative grid gap-6 md:grid-cols-[180px_1fr] md:gap-12">
+                <div className="relative">
+                  <div className="text-sm font-semibold text-cyan-400">
+                    1998 — 2001 E.C.
+                  </div>
+
+                  <div className="absolute -left-[3px] top-8 hidden h-4 w-4 rounded-full border-4 border-slate-950 bg-cyan-400 md:block" />
+                </div>
+
+                <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-7 transition hover:border-cyan-400/30">
+                  <div className="flex flex-col justify-between gap-3 sm:flex-row">
+                    <div>
+                      <h3 className="text-xl font-bold">
+                        Video Conference Administration Technician
+                      </h3>                   
+                    </div>
+
+                    <span className="h-fit rounded-full bg-cyan-400/10 px-3 py-1 text-xs text-cyan-300">
+                      Communication
+                    </span>
+                  </div>
+
+                  <p className="mt-5 text-justify leading-7 text-slate-400">
+                    Administered video conferencing and communication systems,
+                    monitored service availability, diagnosed technical problems,
+                    provided technical support, and maintained reliable
+                    communication services.
+                  </p>
+
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    {[
+                      "Video Conferencing",
+                      "Technical Support",
+                      "System Monitoring",
+                      "Service Continuity",
+                    ].map((item) => (
+                      <span
+                        key={item}
+                        className="rounded-full bg-slate-900 px-3 py-1.5 text-xs text-slate-400"
+                      >
+                        {item}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
@@ -751,7 +907,7 @@ export default function Home() {
                     </span>
                   </div>
 
-                  <p className="mt-5 text-sm leading-7 text-slate-400">
+                  <p className="mt-5 text-sm text-justify leading-7 text-slate-400">
                     Advanced study in information technology with research focus on
                     artificial intelligence and document processing.
                   </p>
@@ -776,7 +932,7 @@ export default function Home() {
                     </span>
                   </div>
 
-                  <p className="mt-5 text-sm leading-7 text-slate-400">
+                  <p className="mt-5 text-sm text-justify leading-7 text-slate-400">
                     Foundation in computer systems, networking, databases, software
                     development, and information technology.
                   </p>
@@ -864,7 +1020,7 @@ export default function Home() {
                   <span className="text-cyan-400"> meaningful.</span>
                 </h2>
 
-                <p className="mt-6 max-w-xl leading-8 text-slate-400">
+                <p className="mt-6 max-w-xl text-justify leading-8 text-slate-400">
                   Whether you have a technology project, professional opportunity,
                   collaboration idea, or simply want to connect, I'd be happy to
                   hear from you.
@@ -989,11 +1145,11 @@ export default function Home() {
         <div className="mx-auto flex max-w-7xl flex-col justify-between gap-6 sm:flex-row sm:items-center">
           <div>
             <div className="text-lg font-bold">
-              WONDWOSSEN<span className="text-cyan-400">.</span>
+              Commander<span className="text-cyan-400">.</span>
             </div>
 
             <p className="mt-2 text-sm text-slate-500">
-              ICT & IT Infrastructure Professional
+              Information Technology Professional
             </p>
           </div>
 
