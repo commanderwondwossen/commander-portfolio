@@ -5,101 +5,126 @@ export default function Home() {
     <main className="min-h-screen bg-slate-950 text-white">
      <Navbar />
       {/* Hero */}
-      <section className="relative flex min-h-screen items-center overflow-hidden">
-        {/* Background effects */}
-        <div className="absolute left-1/4 top-1/4 h-72 w-72 rounded-full bg-cyan-500/10 blur-3xl" />
-        <div className="absolute bottom-1/4 right-1/4 h-72 w-72 rounded-full bg-blue-500/10 blur-3xl" />
+<section className="relative flex min-h-screen items-center overflow-hidden">
+  {/* Background effects */}
+  <div className="absolute left-1/4 top-1/4 h-72 w-72 rounded-full bg-cyan-500/10 blur-3xl" />
+  <div className="absolute bottom-1/4 right-1/4 h-72 w-72 rounded-full bg-blue-500/10 blur-3xl" />
 
-        <div className="relative mx-auto grid max-w-7xl gap-16 px-6 py-32 lg:grid-cols-2 lg:items-center">
-          {/* Text */}
-          <Reveal direction="left">
-          <div>
-            <p className="mb-5 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-400">
-              Information Technology Professional
-            </p>
+  <div className="relative mx-auto grid w-full max-w-7xl gap-16 px-6 py-32 lg:grid-cols-2 lg:items-center">
+    {/* Hero Text */}
+    <Reveal direction="left">
+      <div>
+        {/* Professional Title */}
+        <p className="mb-5 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-400">
+          Information Technology Professional
+        </p>
 
-            <h1 className="text-5xl font-bold leading-tight tracking-tight sm:text-6xl lg:text-7xl">
-              Building
-              <span className="block text-cyan-400">Reliable</span>
-              Technology Solutions.
-            </h1>
+        {/* Name */}
+        <h1 className="text-4xl font-bold leading-tight tracking-tight sm:text-6xl lg:text-7xl">
+          Commander Wondwossen
+          <span className="block text-cyan-400">Atnafu</span>
+        </h1>
 
-            <p className="mt-7 max-w-2xl text-justify text-lg leading-8 text-slate-400">
-              I design, implement, and manage secure and scalable technology
-              solutions across networking, infrastructure, systems,
-              software, and ICT management.
-            </p>
+        {/* Main Statement */}
+        <p className="mt-5 text-xl font-medium text-slate-200 sm:text-2xl">
+          Building Reliable Technology Solutions.
+        </p>
 
-            <div className="mt-9 flex flex-wrap gap-4">
-              <a
-                href="#projects"
-                className="rounded-full bg-cyan-400 px-7 py-3 font-semibold text-slate-950 transition hover:bg-cyan-300"
-              >
-                Explore My Work →
-              </a>
+        {/* Description */}
+        <p className="mt-7 max-w-2xl text-justify text-lg leading-8 text-slate-400">
+          I design, implement, and manage secure and scalable technology
+          solutions across networking, IT infrastructure, systems
+          administration, software development, cybersecurity, and ICT
+          management.
+        </p>
 
-              <a
-                href="#contact"
-                className="rounded-full border border-white/20 px-7 py-3 font-semibold text-white transition hover:border-cyan-400 hover:text-cyan-400"
-              >
-                Contact Me
-              </a>
-            </div>
+        {/* Buttons */}
+        <div className="mt-9 flex flex-wrap gap-4">
+          <a
+            href="#projects"
+            className="rounded-full bg-cyan-400 px-7 py-3 font-semibold text-slate-950 transition hover:bg-cyan-300"
+          >
+            Explore My Work →
+          </a>
 
-            {/* Skills */}
-            <div className="mt-12 flex flex-wrap gap-3">
-              {[
-                "Networking",
-                "Infrastructure",
-                "Systems",
-                "Cybersecurity",
-                "Web Technology",
-                "ICT Management",
-              ].map((skill) => (
-                <span
-                  key={skill}
-                  className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-slate-300"
-                >
-                  {skill}
-                </span>
-              ))}
-            </div>
-          </div>
-          </Reveal>
+          <a
+            href="#contact"
+            className="rounded-full border border-white/20 px-7 py-3 font-semibold text-white transition hover:border-cyan-400 hover:text-cyan-400"
+          >
+            Contact Me
+          </a>
+        </div>
 
-          {/* Right-side technical visual */}
-          <div className="hidden lg:block">
-            <div className="relative mx-auto h-[450px] w-[450px]">
-              <div className="absolute inset-0 rounded-full border border-cyan-400/20" />
-              <div className="absolute inset-10 rounded-full border border-cyan-400/10" />
-              <div className="absolute inset-20 rounded-full border border-cyan-400/10" />
+        {/* Areas of Expertise */}
+        <div className="mt-12 flex flex-wrap gap-3">
+          {[
+            "Networking",
+            "Infrastructure",
+            "Systems",
+            "Cybersecurity",
+            "Web Technology",
+            "ICT Management",
+          ].map((skill) => (
+            <span
+              key={skill}
+              className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-slate-300 transition hover:border-cyan-400/30 hover:text-cyan-300"
+            >
+              {skill}
+            </span>
+          ))}
+        </div>
+      </div>
+    </Reveal>
 
-              <div className="absolute left-1/2 top-1/2 flex h-32 w-32 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-2xl border border-cyan-400/30 bg-cyan-400/10 shadow-2xl shadow-cyan-500/10">
-                <div className="text-center">
-                  <div className="text-3xl font-bold">ICT</div>
-                  <div className="mt-1 text-xs text-cyan-300">SOLUTIONS</div>
-                </div>
-              </div>
+    {/* Right-side Technical Visual */}
+    <div className="hidden lg:block">
+      <div className="relative mx-auto h-[450px] w-[450px]">
+        {/* Circular rings */}
+        <div className="absolute inset-0 rounded-full border border-cyan-400/20" />
+        <div className="absolute inset-10 rounded-full border border-cyan-400/10" />
+        <div className="absolute inset-20 rounded-full border border-cyan-400/10" />
 
-              <div className="absolute left-4 top-1/2 rounded-xl border border-white/10 bg-white/5 px-4 py-3 backdrop-blur">
-                <span className="text-sm text-slate-300">NETWORK</span>
-              </div>
-
-              <div className="absolute right-0 top-20 rounded-xl border border-white/10 bg-white/5 px-4 py-3 backdrop-blur">
-                <span className="text-sm text-slate-300">CLOUD</span>
-              </div>
-
-              <div className="absolute bottom-16 right-4 rounded-xl border border-white/10 bg-white/5 px-4 py-3 backdrop-blur">
-                <span className="text-sm text-slate-300">SECURITY</span>
-              </div>
-
-              <div className="absolute bottom-10 left-20 rounded-xl border border-white/10 bg-white/5 px-4 py-3 backdrop-blur">
-                <span className="text-sm text-slate-300">SYSTEMS</span>
-              </div>
+        {/* Center */}
+        <div className="absolute left-1/2 top-1/2 flex h-32 w-32 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-2xl border border-cyan-400/30 bg-cyan-400/10 shadow-2xl shadow-cyan-500/10">
+          <div className="text-center">
+            <div className="text-3xl font-bold">ICT</div>
+            <div className="mt-1 text-xs text-cyan-300">
+              SOLUTIONS
             </div>
           </div>
         </div>
-      </section>
+
+        {/* Network */}
+        <div className="absolute left-4 top-1/2 rounded-xl border border-white/10 bg-white/5 px-4 py-3 backdrop-blur">
+          <span className="text-sm text-slate-300">
+            NETWORK
+          </span>
+        </div>
+
+        {/* Cloud */}
+        <div className="absolute right-0 top-20 rounded-xl border border-white/10 bg-white/5 px-4 py-3 backdrop-blur">
+          <span className="text-sm text-slate-300">
+            CLOUD
+          </span>
+        </div>
+
+        {/* Security */}
+        <div className="absolute bottom-16 right-4 rounded-xl border border-white/10 bg-white/5 px-4 py-3 backdrop-blur">
+          <span className="text-sm text-slate-300">
+            SECURITY
+          </span>
+        </div>
+
+        {/* Systems */}
+        <div className="absolute bottom-10 left-20 rounded-xl border border-white/10 bg-white/5 px-4 py-3 backdrop-blur">
+          <span className="text-sm text-slate-300">
+            SYSTEMS
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Placeholder sections */}
       {/* About */}
@@ -166,8 +191,8 @@ export default function Home() {
                     ["20+", "Years Experience"],
                     ["MSc", "Information Technology"],
                     ["BSc", "Information Technology"],
-                    ["Diploma(10+3)", "Information Technology"],
-                    ["Multiple", "Technology Domains"],
+                    ["Diploma", "Information Technology"],
+                    //["Multiple", "Technology Domains"],
                   ].map(([number, label]) => (
                     <div
                       key={label}
@@ -937,6 +962,30 @@ export default function Home() {
                     development, and information technology.
                   </p>
                 </div>
+                <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-7">
+                  <div className="flex items-start justify-between gap-4">
+                    <div>
+                      <p className="text-sm text-cyan-400">Bachelor's Degree</p>
+
+                      <h3 className="mt-2 text-xl font-bold">
+                        Diploma in Information Technology
+                      </h3>
+
+                      <p className="mt-2 text-sm text-slate-400">
+                        W/ro Siheen Polytechnic College
+                      </p>
+                    </div>
+
+                    <span className="rounded-full bg-cyan-400/10 px-3 py-1 text-xs text-cyan-300">
+                      Diploma
+                    </span>
+                  </div>
+
+                  <p className="mt-5 text-sm text-justify leading-7 text-slate-400">
+                    Foundation in computer systems, networking, databases, software
+                    development, and information technology.
+                  </p>
+                </div>
               </div>
             </div>
 
@@ -1002,174 +1051,174 @@ export default function Home() {
       </section>
 
       {/* Contact */}
-<section
-  id="contact"
-  className="border-t border-white/10 px-4 py-20 sm:px-6 sm:py-28"
->
-  <div className="mx-auto max-w-7xl">
-    <div className="overflow-hidden rounded-3xl border border-cyan-400/20 bg-gradient-to-br from-cyan-400/10 via-white/[0.03] to-blue-500/10 p-5 sm:rounded-[2rem] sm:p-8 md:p-10 lg:p-12">
-      
-      <div className="grid min-w-0 gap-10 lg:grid-cols-2 lg:items-center lg:gap-12">
+      <section
+        id="contact"
+        className="border-t border-white/10 px-4 py-20 sm:px-6 sm:py-28"
+      >
+        <div className="mx-auto max-w-7xl">
+          <div className="overflow-hidden rounded-3xl border border-cyan-400/20 bg-gradient-to-br from-cyan-400/10 via-white/[0.03] to-blue-500/10 p-5 sm:rounded-[2rem] sm:p-8 md:p-10 lg:p-12">
+            
+            <div className="grid min-w-0 gap-10 lg:grid-cols-2 lg:items-center lg:gap-12">
 
-        {/* Left */}
-        <div className="min-w-0">
-          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-cyan-400 sm:tracking-[0.3em]">
-            Contact
-          </p>
+              {/* Left */}
+              <div className="min-w-0">
+                <p className="text-sm font-semibold uppercase tracking-[0.25em] text-cyan-400 sm:tracking-[0.3em]">
+                  Contact
+                </p>
 
-          <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
-            Let's build something
-            <span className="text-cyan-400"> meaningful.</span>
-          </h2>
+                <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
+                  Let's build something
+                  <span className="text-cyan-400"> meaningful.</span>
+                </h2>
 
-          <p className="mt-5 max-w-xl text-justify leading-7 text-slate-400 sm:mt-6 sm:leading-8">
-            Whether you have a technology project, professional opportunity,
-            collaboration idea, or simply want to connect, I'd be happy to
-            hear from you.
-          </p>
+                <p className="mt-5 max-w-xl text-justify leading-7 text-slate-400 sm:mt-6 sm:leading-8">
+                  Whether you have a technology project, professional opportunity,
+                  collaboration idea, or simply want to connect, I'd be happy to
+                  hear from you.
+                </p>
 
-          <div className="mt-7 space-y-4 sm:mt-8">
+                <div className="mt-7 space-y-4 sm:mt-8">
 
-            {/* Email */}
-            <a
-              href="mailto:comwon23@gmail.com"
-              className="flex min-w-0 items-center gap-3 text-slate-300 transition hover:text-cyan-400 sm:gap-4"
-            >
-              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-white/10 bg-white/5 sm:h-11 sm:w-11">
-                @
-              </span>
+                  {/* Email */}
+                  <a
+                    href="mailto:comwon23@gmail.com"
+                    className="flex min-w-0 items-center gap-3 text-slate-300 transition hover:text-cyan-400 sm:gap-4"
+                  >
+                    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-white/10 bg-white/5 sm:h-11 sm:w-11">
+                      @
+                    </span>
 
-              <span className="min-w-0 break-words">
-                <span className="block text-xs text-slate-500">
-                  Email
-                </span>
-                <span className="break-all text-sm sm:text-base">
-                  comwon23@gmail.com
-                </span>
-              </span>
-            </a>
+                    <span className="min-w-0 break-words">
+                      <span className="block text-xs text-slate-500">
+                        Email
+                      </span>
+                      <span className="break-all text-sm sm:text-base">
+                        comwon23@gmail.com
+                      </span>
+                    </span>
+                  </a>
 
-            {/* LinkedIn */}
-            <a
-              href="#"
-              className="flex min-w-0 items-center gap-3 text-slate-300 transition hover:text-cyan-400 sm:gap-4"
-            >
-              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-white/10 bg-white/5 sm:h-11 sm:w-11">
-                in
-              </span>
+                  {/* LinkedIn */}
+                  <a
+                    href="#"
+                    className="flex min-w-0 items-center gap-3 text-slate-300 transition hover:text-cyan-400 sm:gap-4"
+                  >
+                    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-white/10 bg-white/5 sm:h-11 sm:w-11">
+                      in
+                    </span>
 
-              <span className="min-w-0 break-words">
-                <span className="block text-xs text-slate-500">
-                  LinkedIn
-                </span>
-                <span className="break-all text-sm sm:text-base">
-                  linkedin.com/in/your-profile
-                </span>
-              </span>
-            </a>
+                    <span className="min-w-0 break-words">
+                      <span className="block text-xs text-slate-500">
+                        LinkedIn
+                      </span>
+                      <span className="break-all text-sm sm:text-base">
+                        linkedin.com/in/your-profile
+                      </span>
+                    </span>
+                  </a>
 
-            {/* GitHub */}
-            <a
-              href="https://github.com/commanderwondwossen"
-              className="flex min-w-0 items-center gap-3 text-slate-300 transition hover:text-cyan-400 sm:gap-4"
-            >
-              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-white/10 bg-white/5 sm:h-11 sm:w-11">
-                &lt;/&gt;
-              </span>
+                  {/* GitHub */}
+                  <a
+                    href="https://github.com/commanderwondwossen"
+                    className="flex min-w-0 items-center gap-3 text-slate-300 transition hover:text-cyan-400 sm:gap-4"
+                  >
+                    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-white/10 bg-white/5 sm:h-11 sm:w-11">
+                      &lt;/&gt;
+                    </span>
 
-              <span className="min-w-0 break-words">
-                <span className="block text-xs text-slate-500">
-                  GitHub
-                </span>
-                <span className="break-all text-sm sm:text-base">
-                  github.com/commanderwondwossen
-                </span>
-              </span>
-            </a>
+                    <span className="min-w-0 break-words">
+                      <span className="block text-xs text-slate-500">
+                        GitHub
+                      </span>
+                      <span className="break-all text-sm sm:text-base">
+                        github.com/commanderwondwossen
+                      </span>
+                    </span>
+                  </a>
 
+                </div>
+              </div>
+
+              {/* Contact Form */}
+              <form
+                action="https://formspree.io/f/xgaeyqnr"
+                method="POST"
+                className="w-full min-w-0 rounded-3xl border border-white/10 bg-slate-950/60 p-5 backdrop-blur sm:p-7 md:p-8"
+              >
+                <div className="grid min-w-0 gap-5">
+
+                  {/* Name */}
+                  <div className="min-w-0">
+                    <label
+                      htmlFor="name"
+                      className="mb-2 block text-sm text-slate-400"
+                    >
+                      Name
+                    </label>
+
+                    <input
+                      id="name"
+                      name="name"
+                      type="text"
+                      placeholder="Your name"
+                      required
+                      className="box-border w-full min-w-0 rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none transition placeholder:text-slate-600 focus:border-cyan-400/50"
+                    />
+                  </div>
+
+                  {/* Email */}
+                  <div className="min-w-0">
+                    <label
+                      htmlFor="email"
+                      className="mb-2 block text-sm text-slate-400"
+                    >
+                      Email
+                    </label>
+
+                    <input
+                      id="email"
+                      name="email"
+                      type="email"
+                      placeholder="you@example.com"
+                      required
+                      className="box-border w-full min-w-0 rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none transition placeholder:text-slate-600 focus:border-cyan-400/50"
+                    />
+                  </div>
+
+                  {/* Message */}
+                  <div className="min-w-0">
+                    <label
+                      htmlFor="message"
+                      className="mb-2 block text-sm text-slate-400"
+                    >
+                      Message
+                    </label>
+
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows={5}
+                      placeholder="Tell me about your project or opportunity..."
+                      required
+                      className="box-border w-full min-w-0 resize-none rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none transition placeholder:text-slate-600 focus:border-cyan-400/50"
+                    />
+                  </div>
+
+                  {/* Button */}
+                  <button
+                    type="submit"
+                    className="w-full rounded-xl bg-cyan-400 px-6 py-3 font-semibold text-slate-950 transition hover:-translate-y-0.5 hover:bg-cyan-300 sm:w-auto"
+                  >
+                    Send Message →
+                  </button>
+
+                </div>
+              </form>
+
+            </div>
           </div>
         </div>
-
-        {/* Contact Form */}
-        <form
-          action="https://formspree.io/f/xgaeyqnr"
-          method="POST"
-          className="w-full min-w-0 rounded-3xl border border-white/10 bg-slate-950/60 p-5 backdrop-blur sm:p-7 md:p-8"
-        >
-          <div className="grid min-w-0 gap-5">
-
-            {/* Name */}
-            <div className="min-w-0">
-              <label
-                htmlFor="name"
-                className="mb-2 block text-sm text-slate-400"
-              >
-                Name
-              </label>
-
-              <input
-                id="name"
-                name="name"
-                type="text"
-                placeholder="Your name"
-                required
-                className="box-border w-full min-w-0 rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none transition placeholder:text-slate-600 focus:border-cyan-400/50"
-              />
-            </div>
-
-            {/* Email */}
-            <div className="min-w-0">
-              <label
-                htmlFor="email"
-                className="mb-2 block text-sm text-slate-400"
-              >
-                Email
-              </label>
-
-              <input
-                id="email"
-                name="email"
-                type="email"
-                placeholder="you@example.com"
-                required
-                className="box-border w-full min-w-0 rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none transition placeholder:text-slate-600 focus:border-cyan-400/50"
-              />
-            </div>
-
-            {/* Message */}
-            <div className="min-w-0">
-              <label
-                htmlFor="message"
-                className="mb-2 block text-sm text-slate-400"
-              >
-                Message
-              </label>
-
-              <textarea
-                id="message"
-                name="message"
-                rows={5}
-                placeholder="Tell me about your project or opportunity..."
-                required
-                className="box-border w-full min-w-0 resize-none rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none transition placeholder:text-slate-600 focus:border-cyan-400/50"
-              />
-            </div>
-
-            {/* Button */}
-            <button
-              type="submit"
-              className="w-full rounded-xl bg-cyan-400 px-6 py-3 font-semibold text-slate-950 transition hover:-translate-y-0.5 hover:bg-cyan-300 sm:w-auto"
-            >
-              Send Message →
-            </button>
-
-          </div>
-        </form>
-
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
       {/* Footer */}
       <footer className="border-t border-white/10 px-6 py-10">
         <div className="mx-auto flex max-w-7xl flex-col justify-between gap-6 sm:flex-row sm:items-center">

@@ -7,16 +7,26 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
+const siteUrl = "https://commander-portfolio.vercel.app";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
+
   title: {
-    default: "Commander Wondwossen Atnafu | ICT & IT Infrastructure Professional",
+    default:
+      "Commander Wondwossen Atnafu | ICT & IT Infrastructure Professional",
     template: "%s | Wondwossen Atnafu",
   },
 
   description:
     "Professional portfolio of Commander Wondwossen Atnafu — ICT and IT infrastructure professional specializing in networking, systems administration, cybersecurity, web technology, and ICT management.",
 
+  alternates: {
+    canonical: "/",
+  },
+
   keywords: [
+    "Commander Wondwossen Atnafu",
     "Wondwossen Atnafu",
     "ICT Professional",
     "IT Infrastructure",
@@ -46,6 +56,8 @@ export const metadata: Metadata = {
 
     description:
       "ICT professional specializing in IT infrastructure, networking, systems, cybersecurity, web technology, and ICT management.",
+
+    url: siteUrl,
 
     type: "website",
 
