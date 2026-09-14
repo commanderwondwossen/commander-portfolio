@@ -319,339 +319,196 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-{/* Projects */}
+   {/* Projects */}   
 <section
   id="projects"
-  className="border-t border-white/10 px-6 py-28"
+  className="border-t border-white/10 px-4 py-20 sm:px-6 sm:py-28"
 >
   <div className="mx-auto max-w-7xl">
-
     {/* Section Header */}
-    <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
-      <div className="max-w-3xl">
-        <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-400">
-          Featured Work
-        </p>
+    <div className="max-w-3xl">
+      <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-400">
+        Featured Work
+      </p>
 
-        <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">
-          Projects that demonstrate
-          <span className="text-cyan-400">
-            {" "}practical experience.
-          </span>
-        </h2>
+      <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">
+        Selected projects &{" "}
+        <span className="text-cyan-400">case studies.</span>
+      </h2>
 
-        <p className="mt-6 text-justify leading-8 text-slate-400">
-          A selection of real-world web development and research projects
-          demonstrating practical experience in modern web technologies,
-          organizational websites, and artificial intelligence research.
-        </p>
-      </div>
-
-      <a
-        href="#contact"
-        className="whitespace-nowrap text-sm font-semibold text-cyan-400 transition hover:text-cyan-300"
-      >
-        Discuss a project →
-      </a>
+      <p className="mt-6 text-justify leading-8 text-slate-400">
+        A selection of professional, academic, and web development projects
+        demonstrating my experience in technology, systems, software
+        development, and digital solutions.
+      </p>
     </div>
 
-    {/* Projects Grid */}
-    <div className="mt-14 grid gap-6 lg:grid-cols-2">
-
-      {/* Project 1 — Portfolio */}
-      <Reveal delay={0.1}>
-        <article className="group flex h-full flex-col overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] transition duration-300 hover:-translate-y-1 hover:border-cyan-400/30">
-
-          {/* Project Visual */}
-          <div className="relative flex h-64 shrink-0 items-center justify-center overflow-hidden bg-gradient-to-br from-cyan-950 via-slate-900 to-blue-950">
-
-            <div className="absolute inset-0 opacity-30">
-              <div className="absolute left-1/4 top-1/4 h-32 w-32 rounded-full border border-cyan-400/30" />
-              <div className="absolute bottom-1/4 right-1/4 h-24 w-24 rounded-full border border-blue-400/30" />
-            </div>
-
-            <div className="relative text-center">
-              <div className="text-5xl">&lt;/&gt;</div>
-
-              <p className="mt-3 text-xs uppercase tracking-[0.3em] text-cyan-300">
-                Personal Portfolio
-              </p>
-            </div>
-
-            <span className="absolute right-5 top-5 rounded-full border border-white/10 bg-black/20 px-3 py-1 text-xs text-slate-300 backdrop-blur">
-              Web Development
-            </span>
+    {/* Projects */}
+    <div className="mt-14 grid gap-6 md:grid-cols-2">
+      {/* Project 1 */}
+      <Reveal delay={0}>
+        <article className="group flex h-full flex-col overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] transition duration-300 hover:-translate-y-1 hover:border-cyan-400/30 hover:bg-white/[0.05]">
+          <div className="relative aspect-video w-full overflow-hidden border-b border-white/10 bg-slate-900">
+            <Image
+              src="/portfolio.jpg"
+              alt="Personal Portfolio Website"
+              fill
+              className="object-cover transition duration-500 group-hover:scale-105"
+            />
           </div>
 
-          {/* Project Content */}
-          <div className="flex flex-1 flex-col p-8">
+          <div className="flex flex-1 flex-col p-6 sm:p-7">
+            <span className="text-sm font-semibold text-cyan-400">01</span>
 
-            <p className="text-xs font-semibold uppercase tracking-widest text-cyan-400">
-              Project 01
-            </p>
-
-            <h3 className="mt-3 text-2xl font-bold">
+            <h3 className="mt-6 text-xl font-semibold">
               Personal Portfolio Website
             </h3>
 
-            <p className="mt-5 text-justify leading-7 text-slate-400">
-              A professional portfolio website developed to present my
+            <p className="mt-4 text-sm leading-7 text-justify text-slate-400">
+              A professional portfolio website designed to present my
               experience, technical expertise, projects, education, and
-              professional background through a modern responsive interface.
+              professional background.
             </p>
 
-            {/* Technologies */}
-            <div className="mt-auto flex flex-wrap gap-2 pt-6">
-              {[
-                "Next.js",
-                "React",
-                "TypeScript",
-                "Tailwind CSS",
-                "Vercel",
-              ].map((tech) => (
-                <span
-                  key={tech}
-                  className="rounded-full bg-slate-900 px-3 py-1.5 text-xs text-slate-400"
-                >
-                  {tech}
-                </span>
-              ))}
+            <div className="mt-5 flex flex-wrap gap-2">
+              {["Next.js", "TypeScript", "React", "Tailwind CSS"].map(
+                (technology) => (
+                  <span
+                    key={technology}
+                    className="rounded-full bg-slate-900 px-3 py-1 text-xs text-slate-400"
+                  >
+                    {technology}
+                  </span>
+                )
+              )}
             </div>
 
-            {/* Links */}
-            <div className="mt-8 flex flex-wrap gap-6 text-sm">
+            <div className="mt-6">
               <a
                 href="https://commander-portfolio.vercel.app"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-medium text-cyan-400 hover:text-cyan-300"
+                className="text-sm font-medium text-cyan-400 transition hover:text-cyan-300"
               >
-                Live Website →
-              </a>
-
-              <a
-                href="https://github.com/commanderwondwossen/commander-portfolio"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-slate-400 hover:text-white"
-              >
-                GitHub →
+                View Project →
               </a>
             </div>
           </div>
         </article>
       </Reveal>
 
-      {/* Project 2 — Wadla Website */}
-      <Reveal delay={0.2}>
-        <article className="group flex h-full flex-col overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] transition duration-300 hover:-translate-y-1 hover:border-cyan-400/30">
-
-          {/* Project Visual */}
-          <div className="relative flex h-64 shrink-0 items-center justify-center overflow-hidden bg-gradient-to-br from-blue-950 via-slate-900 to-indigo-950">
-
-            <div className="text-center">
-              <div className="text-5xl">W</div>
-
-              <p className="mt-3 text-xs uppercase tracking-[0.3em] text-blue-300">
-                Organizational Website
-              </p>
-            </div>
-
-            <span className="absolute right-5 top-5 rounded-full border border-white/10 bg-black/20 px-3 py-1 text-xs text-slate-300 backdrop-blur">
-              Web Development
-            </span>
+      {/* Project 2 */}
+      <Reveal delay={0.08}>
+        <article className="group flex h-full flex-col overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] transition duration-300 hover:-translate-y-1 hover:border-cyan-400/30 hover:bg-white/[0.05]">
+          <div className="relative aspect-video w-full overflow-hidden border-b border-white/10 bg-slate-900">
+            <Image
+              src="/wadla.jpg"
+              alt="Wadla Woreda Website"
+              fill
+              className="object-cover transition duration-500 group-hover:scale-105"
+            />
           </div>
 
-          {/* Project Content */}
-          <div className="flex flex-1 flex-col p-8">
+          <div className="flex flex-1 flex-col p-6 sm:p-7">
+            <span className="text-sm font-semibold text-cyan-400">02</span>
 
-            <p className="text-xs font-semibold uppercase tracking-widest text-cyan-400">
-              Project 02
-            </p>
-
-            <h3 className="mt-3 text-2xl font-bold">
+            <h3 className="mt-6 text-xl font-semibold">
               Wadla Woreda Website
             </h3>
 
-            <p className="mt-5 text-justify leading-7 text-slate-400">
-              A modern responsive website developed to present information,
-              services, activities, and organizational content for Wadla
-              Woreda.
+            <p className="mt-4 text-sm leading-7 text-justify text-slate-400">
+              A modern website developed to provide information about Wadla
+              Woreda, its administration, services, and activities through a
+              structured digital platform.
             </p>
 
-            {/* Technologies */}
-            <div className="mt-auto flex flex-wrap gap-2 pt-6">
-              {[
-                "Next.js",
-                "TypeScript",
-                "Tailwind CSS",
-                "Framer Motion",
-              ].map((tech) => (
+            <div className="mt-5 flex flex-wrap gap-2">
+              {["Next.js", "TypeScript", "Tailwind CSS"].map((technology) => (
                 <span
-                  key={tech}
-                  className="rounded-full bg-slate-900 px-3 py-1.5 text-xs text-slate-400"
+                  key={technology}
+                  className="rounded-full bg-slate-900 px-3 py-1 text-xs text-slate-400"
                 >
-                  {tech}
+                  {technology}
                 </span>
               ))}
-            </div>
-
-            {/* Links */}
-            <div className="mt-8 flex flex-wrap gap-6 text-sm">
-              <a
-                href="https://wadla-website.vercel.app"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-medium text-cyan-400 hover:text-cyan-300"
-              >
-                Live Website →
-              </a>
             </div>
           </div>
         </article>
       </Reveal>
 
-      {/* Project 3 — Kone High School Foundation */}
-      <Reveal delay={0.3}>
-        <article className="group flex h-full flex-col overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] transition duration-300 hover:-translate-y-1 hover:border-cyan-400/30">
-
-          {/* Project Visual */}
-          <div className="relative flex h-64 shrink-0 items-center justify-center overflow-hidden bg-gradient-to-br from-emerald-950 via-slate-900 to-cyan-950">
-
-            <div className="text-center">
-              <div className="text-5xl">K</div>
-
-              <p className="mt-3 text-xs uppercase tracking-[0.3em] text-emerald-300">
-                Education Website
-              </p>
-            </div>
-
-            <span className="absolute right-5 top-5 rounded-full border border-white/10 bg-black/20 px-3 py-1 text-xs text-slate-300 backdrop-blur">
-              Education
+      {/* Project 3 */}
+      <Reveal delay={0.16}>
+        <article className="group flex h-full flex-col overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] transition duration-300 hover:-translate-y-1 hover:border-cyan-400/30 hover:bg-white/[0.05]">
+          <div className="flex aspect-video w-full items-center justify-center border-b border-white/10 bg-gradient-to-br from-slate-900 to-slate-800">
+            <span className="text-sm uppercase tracking-[0.2em] text-slate-500">
+              Project Preview
             </span>
           </div>
 
-          {/* Project Content */}
-          <div className="flex flex-1 flex-col p-8">
+          <div className="flex flex-1 flex-col p-6 sm:p-7">
+            <span className="text-sm font-semibold text-cyan-400">03</span>
 
-            <p className="text-xs font-semibold uppercase tracking-widest text-cyan-400">
-              Project 03
-            </p>
-
-            <h3 className="mt-3 text-2xl font-bold">
+            <h3 className="mt-6 text-xl font-semibold">
               Kone High School Foundation Website
             </h3>
 
-            <p className="mt-5 text-justify leading-7 text-slate-400">
-              A website developed for the Kone High School Foundation to
-              present its educational initiatives, activities, information,
-              and support for the school community.
+            <p className="mt-4 text-sm leading-7 text-justify text-slate-400">
+              A website project developed for the Kone High School Foundation
+              to present its purpose, activities, and information through a
+              dedicated online platform.
             </p>
 
-            {/* Technologies */}
-            <div className="mt-auto flex flex-wrap gap-2 pt-6">
-              {[
-                "Next.js",
-                "TypeScript",
-                "Tailwind CSS",
-              ].map((tech) => (
-                <span
-                  key={tech}
-                  className="rounded-full bg-slate-900 px-3 py-1.5 text-xs text-slate-400"
-                >
-                  {tech}
-                </span>
-              ))}
-            </div>
-
-            {/* Links */}
-            <div className="mt-8 flex flex-wrap gap-6 text-sm">
-              <a
-                href="https://www.konehs-foundation.org/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-medium text-cyan-400 hover:text-cyan-300"
-              >
-                Live Website →
-              </a>
+            <div className="mt-5 flex flex-wrap gap-2">
+              <span className="rounded-full bg-slate-900 px-3 py-1 text-xs text-slate-400">
+                Web Development
+              </span>
             </div>
           </div>
         </article>
       </Reveal>
 
-      {/* Project 4 — OCR */}
-      <Reveal delay={0.4}>
-        <article className="group flex h-full flex-col overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] transition duration-300 hover:-translate-y-1 hover:border-cyan-400/30">
-
-          {/* Project Visual */}
-          <div className="relative flex h-64 shrink-0 items-center justify-center overflow-hidden bg-gradient-to-br from-violet-950 via-slate-900 to-blue-950">
-
-            <div className="text-center">
-              <div className="text-5xl">AI</div>
-
-              <p className="mt-3 text-xs uppercase tracking-[0.3em] text-violet-300">
-                Deep Learning Research
-              </p>
-            </div>
-
-            <span className="absolute right-5 top-5 rounded-full border border-white/10 bg-black/20 px-3 py-1 text-xs text-slate-300 backdrop-blur">
-              AI / Research
+      {/* Project 4 */}
+      <Reveal delay={0.24}>
+        <article className="group flex h-full flex-col overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] transition duration-300 hover:-translate-y-1 hover:border-cyan-400/30 hover:bg-white/[0.05]">
+          <div className="flex aspect-video w-full items-center justify-center border-b border-white/10 bg-gradient-to-br from-slate-900 to-slate-800">
+            <span className="text-sm uppercase tracking-[0.2em] text-slate-500">
+              Research Project
             </span>
           </div>
 
-          {/* Project Content */}
-          <div className="flex flex-1 flex-col p-8">
+          <div className="flex flex-1 flex-col p-6 sm:p-7">
+            <span className="text-sm font-semibold text-cyan-400">04</span>
 
-            <p className="text-xs font-semibold uppercase tracking-widest text-cyan-400">
-              Research Project
-            </p>
-
-            <h3 className="mt-3 text-2xl font-bold">
+            <h3 className="mt-6 text-xl font-semibold">
               Deep Learning-Based OCR for Printed Amharic Documents
             </h3>
 
-            <p className="mt-5 text-justify leading-7 text-slate-400">
-              An MSc research project focused on recognizing printed Amharic
-              documents and converting document images into editable text
-              using deep learning-based OCR techniques.
+            <p className="mt-4 text-sm leading-7 text-justify text-slate-400">
+              An MSc research project focused on converting printed Amharic
+              documents into editable digital text using deep learning-based
+              OCR techniques.
             </p>
 
-            {/* Technologies */}
-            <div className="mt-auto flex flex-wrap gap-2 pt-6">
-              {[
-                "Python",
-                "Deep Learning",
-                "CNN",
-                "BiLSTM",
-                "CTC",
-                "OCR",
-              ].map((tech) => (
-                <span
-                  key={tech}
-                  className="rounded-full bg-slate-900 px-3 py-1.5 text-xs text-slate-400"
-                >
-                  {tech}
-                </span>
-              ))}
-            </div>
-
-            {/* Research Link */}
-            <div className="mt-8">
-              <a
-                href="#"
-                className="text-sm font-medium text-cyan-400 hover:text-cyan-300"
-              >
-                View Research →
-              </a>
+            <div className="mt-5 flex flex-wrap gap-2">
+              {["Python", "Deep Learning", "CNN", "BiLSTM", "CTC", "OCR"].map(
+                (technology) => (
+                  <span
+                    key={technology}
+                    className="rounded-full bg-slate-900 px-3 py-1 text-xs text-slate-400"
+                  >
+                    {technology}
+                  </span>
+                )
+              )}
             </div>
           </div>
         </article>
       </Reveal>
-
     </div>
   </div>
 </section>
+
+        
       {/* Experience */}
       <section
         id="experience"
