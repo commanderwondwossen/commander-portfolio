@@ -1,16 +1,18 @@
 import Navbar from "@/components/Navbar";
 import Reveal from "@/components/Reveal";
+import Image from "next/image";
 export default function Home() {
   return (
     <main className="min-h-screen bg-slate-950 text-white">
      <Navbar />
-      {/* Hero */}
+{/* Hero */}
 <section className="relative flex min-h-screen items-center overflow-hidden">
   {/* Background effects */}
   <div className="absolute left-1/4 top-1/4 h-72 w-72 rounded-full bg-cyan-500/10 blur-3xl" />
   <div className="absolute bottom-1/4 right-1/4 h-72 w-72 rounded-full bg-blue-500/10 blur-3xl" />
 
-  <div className="relative mx-auto grid w-full max-w-7xl gap-16 px-6 py-32 lg:grid-cols-2 lg:items-center">
+  <div className="relative mx-auto grid w-full max-w-7xl gap-12 px-6 py-28 sm:gap-16 sm:py-32 lg:grid-cols-2 lg:items-center">
+    
     {/* Hero Text */}
     <Reveal direction="left">
       <div>
@@ -76,57 +78,62 @@ export default function Home() {
       </div>
     </Reveal>
 
-    {/* Right-side Technical Visual */}
-    <div className="hidden lg:block">
-      <div className="relative mx-auto h-[450px] w-[450px]">
-        {/* Circular rings */}
-        <div className="absolute inset-0 rounded-full border border-cyan-400/20" />
-        <div className="absolute inset-10 rounded-full border border-cyan-400/10" />
-        <div className="absolute inset-20 rounded-full border border-cyan-400/10" />
+    {/* Professional Photo / Technical Visual */}
+    <Reveal direction="right">
+      <div className="relative mx-auto flex h-[400px] w-full max-w-[400px] items-center justify-center sm:h-[450px] sm:max-w-[450px]">
+        
+        {/* Background glow */}
+        <div className="absolute h-72 w-72 rounded-full bg-cyan-400/10 blur-3xl" />
 
-        {/* Center */}
-        <div className="absolute left-1/2 top-1/2 flex h-32 w-32 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-2xl border border-cyan-400/30 bg-cyan-400/10 shadow-2xl shadow-cyan-500/10">
-          <div className="text-center">
-            <div className="text-3xl font-bold">ICT</div>
-            <div className="mt-1 text-xs text-cyan-300">
-              SOLUTIONS
-            </div>
-          </div>
+        {/* Outer rings */}
+        <div className="absolute inset-4 rounded-full border border-cyan-400/20" />
+        <div className="absolute inset-10 rounded-full border border-cyan-400/10" />
+        <div className="absolute inset-16 rounded-full border border-cyan-400/10" />
+
+        {/* Photograph */}
+        <div className="relative h-64 w-64 overflow-hidden rounded-full border-2 border-cyan-400/40 bg-slate-900 shadow-2xl shadow-cyan-500/20 sm:h-72 sm:w-72">
+          <Image
+            src="/profile.jpg"
+            alt="Commander Wondwossen Atnafu"
+            fill
+            priority
+            className="object-cover"
+            sizes="(max-width: 640px) 256px, 288px"
+          />
         </div>
 
         {/* Network */}
-        <div className="absolute left-4 top-1/2 rounded-xl border border-white/10 bg-white/5 px-4 py-3 backdrop-blur">
+        <div className="absolute left-0 top-1/2 rounded-xl border border-white/10 bg-slate-900/80 px-4 py-3 backdrop-blur sm:left-2">
           <span className="text-sm text-slate-300">
             NETWORK
           </span>
         </div>
 
         {/* Cloud */}
-        <div className="absolute right-0 top-20 rounded-xl border border-white/10 bg-white/5 px-4 py-3 backdrop-blur">
+        <div className="absolute right-0 top-12 rounded-xl border border-white/10 bg-slate-900/80 px-4 py-3 backdrop-blur sm:right-2 sm:top-16">
           <span className="text-sm text-slate-300">
             CLOUD
           </span>
         </div>
 
         {/* Security */}
-        <div className="absolute bottom-16 right-4 rounded-xl border border-white/10 bg-white/5 px-4 py-3 backdrop-blur">
+        <div className="absolute bottom-12 right-0 rounded-xl border border-white/10 bg-slate-900/80 px-4 py-3 backdrop-blur sm:right-2 sm:bottom-16">
           <span className="text-sm text-slate-300">
             SECURITY
           </span>
         </div>
 
         {/* Systems */}
-        <div className="absolute bottom-10 left-20 rounded-xl border border-white/10 bg-white/5 px-4 py-3 backdrop-blur">
+        <div className="absolute bottom-4 left-8 rounded-xl border border-white/10 bg-slate-900/80 px-4 py-3 backdrop-blur sm:left-16 sm:bottom-8">
           <span className="text-sm text-slate-300">
             SYSTEMS
           </span>
         </div>
       </div>
-    </div>
+    </Reveal>
   </div>
 </section>
-
-      {/* Placeholder sections */}
+      
       {/* About */}
       <section id="about" className="border-t border-white/10 px-6 py-28">
         <div className="mx-auto max-w-7xl">
@@ -313,263 +320,338 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Projects */}
-      <section id="projects" className="border-t border-white/10 px-6 py-28">
-        <div className="mx-auto max-w-7xl">
-          <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
-            <div className="max-w-3xl">
-              <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-400">
-                Featured Work
-              </p>
+{/* Projects */}
+<section
+  id="projects"
+  className="border-t border-white/10 px-6 py-28"
+>
+  <div className="mx-auto max-w-7xl">
 
-              <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">
-                Selected projects &
-                <span className="text-cyan-400"> case studies.</span>
-              </h2>
+    {/* Section Header */}
+    <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
+      <div className="max-w-3xl">
+        <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-400">
+          Featured Work
+        </p>
 
-              <p className="mt-6 text-justify leading-8 text-slate-400">
-                A selection of technology projects demonstrating practical
-                experience in infrastructure, networking, systems, artificial
-                intelligence, and modern web development.
+        <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">
+          Projects that demonstrate
+          <span className="text-cyan-400">
+            {" "}practical experience.
+          </span>
+        </h2>
+
+        <p className="mt-6 text-justify leading-8 text-slate-400">
+          A selection of real-world web development and research projects
+          demonstrating practical experience in modern web technologies,
+          organizational websites, and artificial intelligence research.
+        </p>
+      </div>
+
+      <a
+        href="#contact"
+        className="whitespace-nowrap text-sm font-semibold text-cyan-400 transition hover:text-cyan-300"
+      >
+        Discuss a project →
+      </a>
+    </div>
+
+    {/* Projects Grid */}
+    <div className="mt-14 grid gap-6 lg:grid-cols-2">
+
+      {/* Project 1 — Portfolio */}
+      <Reveal delay={0.1}>
+        <article className="group flex h-full flex-col overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] transition duration-300 hover:-translate-y-1 hover:border-cyan-400/30">
+
+          {/* Project Visual */}
+          <div className="relative flex h-64 shrink-0 items-center justify-center overflow-hidden bg-gradient-to-br from-cyan-950 via-slate-900 to-blue-950">
+
+            <div className="absolute inset-0 opacity-30">
+              <div className="absolute left-1/4 top-1/4 h-32 w-32 rounded-full border border-cyan-400/30" />
+              <div className="absolute bottom-1/4 right-1/4 h-24 w-24 rounded-full border border-blue-400/30" />
+            </div>
+
+            <div className="relative text-center">
+              <div className="text-5xl">&lt;/&gt;</div>
+
+              <p className="mt-3 text-xs uppercase tracking-[0.3em] text-cyan-300">
+                Personal Portfolio
               </p>
             </div>
 
-            <a
-              href="#contact"
-              className="whitespace-nowrap text-sm font-semibold text-cyan-400 transition hover:text-cyan-300"
-            >
-              Discuss a project →
-            </a>
+            <span className="absolute right-5 top-5 rounded-full border border-white/10 bg-black/20 px-3 py-1 text-xs text-slate-300 backdrop-blur">
+              Web Development
+            </span>
           </div>
 
-          <div className="mt-14 grid gap-6 lg:grid-cols-2">
-            {/* Project 1 */}
-            <Reveal delay={0.1}>
-            <article className="group overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] transition duration-300 hover:-translate-y-1 hover:border-cyan-400/30">
-              <div className="relative flex h-64 items-center justify-center overflow-hidden bg-gradient-to-br from-cyan-950 via-slate-900 to-blue-950">
-                <div className="absolute inset-0 opacity-30">
-                  <div className="absolute left-1/4 top-1/4 h-32 w-32 rounded-full border border-cyan-400/30" />
-                  <div className="absolute right-1/4 bottom-1/4 h-24 w-24 rounded-full border border-blue-400/30" />
-                </div>
+          {/* Project Content */}
+          <div className="flex flex-1 flex-col p-8">
 
-                <div className="relative text-center">
-                  <div className="text-5xl">⌁</div>
-                  <p className="mt-3 text-xs uppercase tracking-[0.3em] text-cyan-300">
-                    Network Architecture
-                  </p>
-                </div>
+            <p className="text-xs font-semibold uppercase tracking-widest text-cyan-400">
+              Project 01
+            </p>
 
-                <span className="absolute right-5 top-5 rounded-full border border-white/10 bg-black/20 px-3 py-1 text-xs text-slate-300 backdrop-blur">
-                  Infrastructure
+            <h3 className="mt-3 text-2xl font-bold">
+              Personal Portfolio Website
+            </h3>
+
+            <p className="mt-5 text-justify leading-7 text-slate-400">
+              A professional portfolio website developed to present my
+              experience, technical expertise, projects, education, and
+              professional background through a modern responsive interface.
+            </p>
+
+            {/* Technologies */}
+            <div className="mt-auto flex flex-wrap gap-2 pt-6">
+              {[
+                "Next.js",
+                "React",
+                "TypeScript",
+                "Tailwind CSS",
+                "Vercel",
+              ].map((tech) => (
+                <span
+                  key={tech}
+                  className="rounded-full bg-slate-900 px-3 py-1.5 text-xs text-slate-400"
+                >
+                  {tech}
                 </span>
-              </div>
+              ))}
+            </div>
 
-              <div className="p-8">
-                <div className="flex items-start justify-between gap-4">
-                  <div>
-                    <p className="text-xs font-semibold uppercase tracking-widest text-cyan-400">
-                      Case Study 01
-                    </p>
+            {/* Links */}
+            <div className="mt-8 flex flex-wrap gap-6 text-sm">
+              <a
+                href="https://commander-portfolio.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-cyan-400 hover:text-cyan-300"
+              >
+                Live Website →
+              </a>
 
-                    <h3 className="mt-3 text-2xl font-bold">
-                      Enterprise Network Infrastructure
-                    </h3>
-                  </div>
-
-                  <span className="text-2xl text-slate-500 transition group-hover:text-cyan-400">
-                    ↗
-                  </span>
-                </div>
-
-                <p className="mt-5 text-justify leading-7 text-slate-400">
-                  Designed a segmented enterprise network architecture supporting
-                  multiple departments, secure communication, centralized services,
-                  and reliable connectivity.
-                </p>
-
-                <div className="mt-6 flex flex-wrap gap-2">
-                  {["Cisco", "VLAN", "Routing", "Switching", "TCP/IP"].map(
-                    (tech) => (
-                      <span
-                        key={tech}
-                        className="rounded-full bg-slate-900 px-3 py-1.5 text-xs text-slate-400"
-                      >
-                        {tech}
-                      </span>
-                    )
-                  )}
-                </div>
-
-                <div className="mt-8 flex gap-6 text-sm">
-                  <a href="#" className="font-medium text-cyan-400 hover:text-cyan-300">
-                    View Case Study →
-                  </a>
-                  <a href="#" className="text-slate-400 hover:text-white">
-                    Architecture
-                  </a>
-                </div>
-              </div>
-            </article>
-            </Reveal>
-
-            {/* Project 2 */}
-            <Reveal delay={0.2}>
-            <article className="group overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] transition duration-300 hover:-translate-y-1 hover:border-cyan-400/30">
-              <div className="relative flex h-64 items-center justify-center overflow-hidden bg-gradient-to-br from-blue-950 via-slate-900 to-indigo-950">
-                <div className="text-center">
-                  <div className="text-5xl">▣</div>
-                  <p className="mt-3 text-xs uppercase tracking-[0.3em] text-blue-300">
-                    Systems Administration
-                  </p>
-                </div>
-
-                <span className="absolute right-5 top-5 rounded-full border border-white/10 bg-black/20 px-3 py-1 text-xs text-slate-300 backdrop-blur">
-                  Systems
-                </span>
-              </div>
-
-              <div className="p-8">
-                <p className="text-xs font-semibold uppercase tracking-widest text-cyan-400">
-                  Case Study 02
-                </p>
-
-                <h3 className="mt-3 text-2xl font-bold">
-                  Windows Server & Active Directory
-                </h3>
-
-                <p className="mt-5 text-justify leading-7 text-slate-400">
-                  Built a virtualized Windows Server environment implementing Active
-                  Directory, DNS, DHCP, organizational units, Group Policy, and
-                  centralized identity management.
-                </p>
-
-                <div className="mt-6 flex flex-wrap gap-2">
-                  {["Windows Server", "AD DS", "DNS", "DHCP", "GPO"].map((tech) => (
-                    <span
-                      key={tech}
-                      className="rounded-full bg-slate-900 px-3 py-1.5 text-xs text-slate-400"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-
-                <div className="mt-8">
-                  <a href="#" className="text-sm font-medium text-cyan-400 hover:text-cyan-300">
-                    View Case Study →
-                  </a>
-                </div>
-              </div>
-            </article>
-            </Reveal>
-
-            {/* Project 3 */}
-            <Reveal delay={0.3}>
-            <article className="group overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] transition duration-300 hover:-translate-y-1 hover:border-cyan-400/30">
-              <div className="relative flex h-64 items-center justify-center overflow-hidden bg-gradient-to-br from-emerald-950 via-slate-900 to-cyan-950">
-                <div className="text-center">
-                  <div className="text-5xl">AI</div>
-                  <p className="mt-3 text-xs uppercase tracking-[0.3em] text-emerald-300">
-                    Deep Learning
-                  </p>
-                </div>
-
-                <span className="absolute right-5 top-5 rounded-full border border-white/10 bg-black/20 px-3 py-1 text-xs text-slate-300 backdrop-blur">
-                  AI / Research
-                </span>
-              </div>
-
-              <div className="p-8">
-                <p className="text-xs font-semibold uppercase tracking-widest text-cyan-400">
-                  Research Project
-                </p>
-
-                <h3 className="mt-3 text-2xl font-bold">
-                  Amharic Document OCR
-                </h3>
-
-                <p className="mt-5 text-justify leading-7 text-slate-400">
-                  Developed a deep learning based OCR approach for recognizing
-                  printed Amharic documents using computer vision and sequence
-                  modeling techniques.
-                </p>
-
-                <div className="mt-6 flex flex-wrap gap-2">
-                  {["Python", "TensorFlow", "CNN", "BiLSTM", "CTC"].map((tech) => (
-                    <span
-                      key={tech}
-                      className="rounded-full bg-slate-900 px-3 py-1.5 text-xs text-slate-400"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-
-                <div className="mt-8">
-                  <a href="#" className="text-sm font-medium text-cyan-400 hover:text-cyan-300">
-                    View Research →
-                  </a>
-                </div>
-              </div>
-            </article>
-            </Reveal>
-
-            {/* Project 4 */}
-            <Reveal delay={0.4}>
-            <article className="group overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] transition duration-300 hover:-translate-y-1 hover:border-cyan-400/30">
-              <div className="relative flex h-64 items-center justify-center overflow-hidden bg-gradient-to-br from-violet-950 via-slate-900 to-blue-950">
-                <div className="text-center">
-                  <div className="text-5xl">&lt;/&gt;</div>
-                  <p className="mt-3 text-xs uppercase tracking-[0.3em] text-violet-300">
-                    Full-Stack Development
-                  </p>
-                </div>
-
-                <span className="absolute right-5 top-5 rounded-full border border-white/10 bg-black/20 px-3 py-1 text-xs text-slate-300 backdrop-blur">
-                  Web
-                </span>
-              </div>
-
-              <div className="p-8">
-                <p className="text-xs font-semibold uppercase tracking-widest text-cyan-400">
-                  Web Project
-                </p>
-
-                <h3 className="mt-3 text-2xl font-bold">
-                  Modern Web Application
-                </h3>
-
-                <p className="mt-5 text-justify leading-7 text-slate-400">
-                  Developed a responsive modern web application using a
-                  component-based architecture, modern frontend technologies, and
-                  scalable backend services.
-                </p>
-
-                <div className="mt-6 flex flex-wrap gap-2">
-                  {["Next.js", "React", "TypeScript", "Tailwind", "Node.js"].map(
-                    (tech) => (
-                      <span
-                        key={tech}
-                        className="rounded-full bg-slate-900 px-3 py-1.5 text-xs text-slate-400"
-                      >
-                        {tech}
-                      </span>
-                    )
-                  )}
-                </div>
-
-                <div className="mt-8">
-                  <a href="#" className="text-sm font-medium text-cyan-400 hover:text-cyan-300">
-                    View Project →
-                  </a>
-                </div>
-              </div>
-            </article>
-            </Reveal>
+              <a
+                href="https://github.com/commanderwondwossen/commander-portfolio"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-slate-400 hover:text-white"
+              >
+                GitHub →
+              </a>
+            </div>
           </div>
-        </div>
-      </section>
+        </article>
+      </Reveal>
 
+      {/* Project 2 — Wadla Website */}
+      <Reveal delay={0.2}>
+        <article className="group flex h-full flex-col overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] transition duration-300 hover:-translate-y-1 hover:border-cyan-400/30">
+
+          {/* Project Visual */}
+          <div className="relative flex h-64 shrink-0 items-center justify-center overflow-hidden bg-gradient-to-br from-blue-950 via-slate-900 to-indigo-950">
+
+            <div className="text-center">
+              <div className="text-5xl">W</div>
+
+              <p className="mt-3 text-xs uppercase tracking-[0.3em] text-blue-300">
+                Organizational Website
+              </p>
+            </div>
+
+            <span className="absolute right-5 top-5 rounded-full border border-white/10 bg-black/20 px-3 py-1 text-xs text-slate-300 backdrop-blur">
+              Web Development
+            </span>
+          </div>
+
+          {/* Project Content */}
+          <div className="flex flex-1 flex-col p-8">
+
+            <p className="text-xs font-semibold uppercase tracking-widest text-cyan-400">
+              Project 02
+            </p>
+
+            <h3 className="mt-3 text-2xl font-bold">
+              Wadla Woreda Website
+            </h3>
+
+            <p className="mt-5 text-justify leading-7 text-slate-400">
+              A modern responsive website developed to present information,
+              services, activities, and organizational content for Wadla
+              Woreda.
+            </p>
+
+            {/* Technologies */}
+            <div className="mt-auto flex flex-wrap gap-2 pt-6">
+              {[
+                "Next.js",
+                "TypeScript",
+                "Tailwind CSS",
+                "Framer Motion",
+              ].map((tech) => (
+                <span
+                  key={tech}
+                  className="rounded-full bg-slate-900 px-3 py-1.5 text-xs text-slate-400"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
+
+            {/* Links */}
+            <div className="mt-8 flex flex-wrap gap-6 text-sm">
+              <a
+                href="https://wadla-website.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-cyan-400 hover:text-cyan-300"
+              >
+                Live Website →
+              </a>
+            </div>
+          </div>
+        </article>
+      </Reveal>
+
+      {/* Project 3 — Kone High School Foundation */}
+      <Reveal delay={0.3}>
+        <article className="group flex h-full flex-col overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] transition duration-300 hover:-translate-y-1 hover:border-cyan-400/30">
+
+          {/* Project Visual */}
+          <div className="relative flex h-64 shrink-0 items-center justify-center overflow-hidden bg-gradient-to-br from-emerald-950 via-slate-900 to-cyan-950">
+
+            <div className="text-center">
+              <div className="text-5xl">K</div>
+
+              <p className="mt-3 text-xs uppercase tracking-[0.3em] text-emerald-300">
+                Education Website
+              </p>
+            </div>
+
+            <span className="absolute right-5 top-5 rounded-full border border-white/10 bg-black/20 px-3 py-1 text-xs text-slate-300 backdrop-blur">
+              Education
+            </span>
+          </div>
+
+          {/* Project Content */}
+          <div className="flex flex-1 flex-col p-8">
+
+            <p className="text-xs font-semibold uppercase tracking-widest text-cyan-400">
+              Project 03
+            </p>
+
+            <h3 className="mt-3 text-2xl font-bold">
+              Kone High School Foundation Website
+            </h3>
+
+            <p className="mt-5 text-justify leading-7 text-slate-400">
+              A website developed for the Kone High School Foundation to
+              present its educational initiatives, activities, information,
+              and support for the school community.
+            </p>
+
+            {/* Technologies */}
+            <div className="mt-auto flex flex-wrap gap-2 pt-6">
+              {[
+                "Next.js",
+                "TypeScript",
+                "Tailwind CSS",
+              ].map((tech) => (
+                <span
+                  key={tech}
+                  className="rounded-full bg-slate-900 px-3 py-1.5 text-xs text-slate-400"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
+
+            {/* Links */}
+            <div className="mt-8 flex flex-wrap gap-6 text-sm">
+              <a
+                href="https://www.konehs-foundation.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-cyan-400 hover:text-cyan-300"
+              >
+                Live Website →
+              </a>
+            </div>
+          </div>
+        </article>
+      </Reveal>
+
+      {/* Project 4 — OCR */}
+      <Reveal delay={0.4}>
+        <article className="group flex h-full flex-col overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] transition duration-300 hover:-translate-y-1 hover:border-cyan-400/30">
+
+          {/* Project Visual */}
+          <div className="relative flex h-64 shrink-0 items-center justify-center overflow-hidden bg-gradient-to-br from-violet-950 via-slate-900 to-blue-950">
+
+            <div className="text-center">
+              <div className="text-5xl">AI</div>
+
+              <p className="mt-3 text-xs uppercase tracking-[0.3em] text-violet-300">
+                Deep Learning Research
+              </p>
+            </div>
+
+            <span className="absolute right-5 top-5 rounded-full border border-white/10 bg-black/20 px-3 py-1 text-xs text-slate-300 backdrop-blur">
+              AI / Research
+            </span>
+          </div>
+
+          {/* Project Content */}
+          <div className="flex flex-1 flex-col p-8">
+
+            <p className="text-xs font-semibold uppercase tracking-widest text-cyan-400">
+              Research Project
+            </p>
+
+            <h3 className="mt-3 text-2xl font-bold">
+              Deep Learning-Based OCR for Printed Amharic Documents
+            </h3>
+
+            <p className="mt-5 text-justify leading-7 text-slate-400">
+              An MSc research project focused on recognizing printed Amharic
+              documents and converting document images into editable text
+              using deep learning-based OCR techniques.
+            </p>
+
+            {/* Technologies */}
+            <div className="mt-auto flex flex-wrap gap-2 pt-6">
+              {[
+                "Python",
+                "Deep Learning",
+                "CNN",
+                "BiLSTM",
+                "CTC",
+                "OCR",
+              ].map((tech) => (
+                <span
+                  key={tech}
+                  className="rounded-full bg-slate-900 px-3 py-1.5 text-xs text-slate-400"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
+
+            {/* Research Link */}
+            <div className="mt-8">
+              <a
+                href="#"
+                className="text-sm font-medium text-cyan-400 hover:text-cyan-300"
+              >
+                View Research →
+              </a>
+            </div>
+          </div>
+        </article>
+      </Reveal>
+
+    </div>
+  </div>
+</section>
       {/* Experience */}
       <section
         id="experience"
@@ -603,7 +685,7 @@ export default function Home() {
               <div className="relative grid gap-6 md:grid-cols-[180px_1fr] md:gap-12">
                 <div className="relative">
                   <div className="text-sm font-semibold text-cyan-400">
-                    2018 E.C. — Present
+                    December 2017 — October 2022 & October 2025 — Present
                   </div>
 
                   <div className="absolute -left-[3px] top-8 hidden h-4 w-4 rounded-full border-4 border-slate-950 bg-cyan-400 md:block" />
@@ -652,7 +734,7 @@ export default function Home() {
               <div className="relative grid gap-6 md:grid-cols-[180px_1fr] md:gap-12">
                 <div className="relative">
                   <div className="text-sm font-semibold text-cyan-400">
-                    2000 — 2013 E.C.
+                    January 2008 — April 2021
                   </div>
 
                   <div className="absolute -left-[3px] top-8 hidden h-4 w-4 rounded-full border-4 border-slate-950 bg-cyan-400 md:block" />
@@ -662,7 +744,7 @@ export default function Home() {
                   <div className="flex flex-col justify-between gap-3 sm:flex-row">
                     <div>
                       <h3 className="text-xl font-bold">
-                        ICT Team Leader (Acting Role)
+                        ICT Team Leader — By Delegation
                       </h3>                    
                     </div>
 
@@ -672,10 +754,10 @@ export default function Home() {
                   </div>
 
                   <p className="mt-5 text-justify leading-7 text-slate-400">
-                    Coordinated ICT operations and technical support, supervised
-                    ICT personnel, assigned technical tasks, and provided technical
-                    guidance while supporting infrastructure deployment,
-                    maintenance, and incident resolution.
+                    Served as ICT Team Leader by delegation while continuing my regular
+                    position, coordinating ICT operations, supervising technical activities, 
+                    assigning tasks, and supporting infrastructure deployment, troubleshooting, 
+                    and user services.
                   </p>
 
                   <div className="mt-4 flex flex-wrap gap-2">
@@ -700,7 +782,7 @@ export default function Home() {
               <div className="relative grid gap-6 md:grid-cols-[180px_1fr] md:gap-12">
                 <div className="relative">
                   <div className="text-sm font-semibold text-cyan-400">
-                    2015 — 2018 E.C.
+                    October 2022 — October 2025
                   </div>
 
                   <div className="absolute -left-[3px] top-8 hidden h-4 w-4 rounded-full border-4 border-slate-950 bg-cyan-400 md:block" />
@@ -749,7 +831,7 @@ export default function Home() {
               <div className="relative grid gap-6 md:grid-cols-[180px_1fr] md:gap-12">
                 <div className="relative">
                   <div className="text-sm font-semibold text-cyan-400">
-                    2005 — 2010 E.C.
+                    September 2013 — December 2017
                   </div>
 
                   <div className="absolute -left-[3px] top-8 hidden h-4 w-4 rounded-full border-4 border-slate-950 bg-cyan-400 md:block" />
@@ -798,7 +880,7 @@ export default function Home() {
               <div className="relative grid gap-6 md:grid-cols-[180px_1fr] md:gap-12">
                 <div className="relative">
                   <div className="text-sm font-semibold text-cyan-400">
-                    2001 — 2005 E.C.
+                    January 2009 —  August 2013
                   </div>
 
                   <div className="absolute -left-[3px] top-8 hidden h-4 w-4 rounded-full border-4 border-slate-950 bg-cyan-400 md:block" />
@@ -846,7 +928,7 @@ export default function Home() {
               <div className="relative grid gap-6 md:grid-cols-[180px_1fr] md:gap-12">
                 <div className="relative">
                   <div className="text-sm font-semibold text-cyan-400">
-                    1998 — 2001 E.C.
+                    August 2006 — Februrary 2009
                   </div>
 
                   <div className="absolute -left-[3px] top-8 hidden h-4 w-4 rounded-full border-4 border-slate-950 bg-cyan-400 md:block" />
