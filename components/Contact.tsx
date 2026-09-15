@@ -51,7 +51,7 @@ export default function Contact() {
 
                   {/* LinkedIn */}
                   <a
-                    href="#"
+                    href="https://www.linkedin.com/in/commanderwondwossen/"
                     className="flex min-w-0 items-center gap-3 text-slate-300 transition hover:text-cyan-400 sm:gap-4"
                   >
                     <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-white/10 bg-white/5 sm:h-11 sm:w-11">
@@ -63,7 +63,7 @@ export default function Contact() {
                         LinkedIn
                       </span>
                       <span className="break-all text-sm sm:text-base">
-                        linkedin.com/in/your-profile
+                        linkedin.com/in/commanderwondwossen/
                       </span>
                     </span>
                   </a>

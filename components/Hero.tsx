@@ -29,7 +29,7 @@ export default function Hero() {
                     </p>
 
                     {/* Description */}
-                    <p className="mt-7 max-w-2xl text-justify text-lg leading-8 text-slate-400">
+                    <p className="mt-7 max-w-2xl text-sm text-left sm:text-justify leading-8 text-slate-400">
                     I design, implement, and manage secure and scalable technology
                     solutions across networking, IT infrastructure, systems
                     administration, software development, cybersecurity, and ICT

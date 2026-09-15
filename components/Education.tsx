@@ -1,5 +1,3 @@
-import Image from "next/image";
-import Reveal from "./Reveal";
 export default function Education() {
     return(
         <section
@@ -40,8 +38,9 @@ export default function Education() {
                   </div>
 
                   <p className="mt-5 text-sm text-justify leading-7 text-slate-400">
-                    Advanced study in information technology with research focus on
-                    artificial intelligence and document processing.
+                    Advanced study in information technology with a focus on artificial
+                    intelligence, deep learning, and document processing, including research
+                    in Amharic document OCR.
                   </p>
                 </div>
 
@@ -65,14 +64,14 @@ export default function Education() {
                   </div>
 
                   <p className="mt-5 text-sm text-justify leading-7 text-slate-400">
-                    Foundation in computer systems, networking, databases, software
-                    development, and information technology.
+                    Comprehensive foundation in information technology, covering computer
+                    systems, networking, databases, software development, and IT infrastructure.
                   </p>
                 </div>
                 <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-7">
                   <div className="flex items-start justify-between gap-4">
                     <div>
-                      <p className="text-sm text-cyan-400">Bachelor's Degree</p>
+                      <p className="text-sm text-cyan-400">Diploma</p>
 
                       <h3 className="mt-2 text-xl font-bold">
                         Diploma in Information Technology
@@ -89,8 +88,8 @@ export default function Education() {
                   </div>
 
                   <p className="mt-5 text-sm text-justify leading-7 text-slate-400">
-                    Foundation in computer systems, networking, databases, software
-                    development, and information technology.
+                    Practical foundation in information technology, covering computer systems,
+                    networking, software applications, databases, and IT support.
                   </p>
                 </div>
               </div>
