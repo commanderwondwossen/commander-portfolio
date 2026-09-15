@@ -37,7 +37,7 @@ export default function Education() {
                     </span>
                   </div>
 
-                  <p className="mt-5 text-sm text-justify leading-7 text-slate-400">
+                  <p className="mt-7 max-w-2xl text-left text-lg leading-8 text-slate-400 md:text-justify">
                     Advanced study in information technology with a focus on artificial
                     intelligence, deep learning, and document processing, including research
                     in Amharic document OCR.
@@ -63,7 +63,7 @@ export default function Education() {
                     </span>
                   </div>
 
-                  <p className="mt-5 text-sm text-justify leading-7 text-slate-400">
+                  <p className="mt-7 max-w-2xl text-left text-lg leading-8 text-slate-400 md:text-justify">
                     Comprehensive foundation in information technology, covering computer
                     systems, networking, databases, software development, and IT infrastructure.
                   </p>
@@ -87,7 +87,7 @@ export default function Education() {
                     </span>
                   </div>
 
-                  <p className="mt-5 text-sm text-justify leading-7 text-slate-400">
+                  <p className="mt-7 max-w-2xl text-left text-lg leading-8 text-slate-400 md:text-justify">
                     Practical foundation in information technology, covering computer systems,
                     networking, software applications, databases, and IT support.
                   </p>

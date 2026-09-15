@@ -7,7 +7,7 @@ export default function Experience() {
         className="border-t border-white/10 px-6 py-28"
       >
         <div className="mx-auto max-w-7xl">
-          <div className="max-w-3xl">
+          <div>
             <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-400">
               Experience
             </p>
@@ -17,7 +17,7 @@ export default function Experience() {
               <span className="text-cyan-400"> technology.</span>
             </h2>
 
-            <p className="mt-6 text-justify leading-8 text-slate-400">
+            <p className="mt-7 text-left text-lg leading-8 text-slate-400 md:text-justify">
               More than two decades of progressive experience across ICT operations,
               networking, systems administration, software development, technical
               support, and ICT leadership.
@@ -53,7 +53,7 @@ export default function Experience() {
                     </span>
                   </div>
 
-                  <p className="mt-5 text-justify leading-7 text-slate-400">
+                  <p className="mt-7 text-left text-lg leading-8 text-slate-400 md:text-justify">
                     Supporting reliable digital operations through IT systems and
                     network troubleshooting, user support, security, backup and
                     recovery, ICT training, technical documentation, and continuous
@@ -102,7 +102,7 @@ export default function Experience() {
                     </span>
                   </div>
 
-                  <p className="mt-5 text-justify leading-7 text-slate-400">
+                  <p className="mt-7 text-left text-lg leading-8 text-slate-400 md:text-justify">
                     Served as ICT Team Leader by delegation while continuing my regular
                     position, coordinating ICT operations, supervising technical activities, 
                     assigning tasks, and supporting infrastructure deployment, troubleshooting, 
@@ -150,7 +150,7 @@ export default function Experience() {
                     </span>
                   </div>
 
-                  <p className="mt-5 text-justify leading-7 text-slate-400">
+                  <p className="mt-7 text-left text-lg leading-8 text-slate-400 md:text-justify">
                     Administered LAN and WAN environments, configured routers,
                     switches, and access points, monitored network performance,
                     resolved connectivity incidents, and supported secure and
@@ -199,7 +199,7 @@ export default function Experience() {
                     </span>
                   </div>
 
-                  <p className="mt-5 text-justify leading-7 text-slate-400">
+                  <p className="mt-7 text-left text-lg leading-8 text-slate-400 md:text-justify">
                     Administered Windows Server environments and IT infrastructure,
                     managed user accounts and permissions, monitored system
                     performance, supported applications and databases, and
@@ -248,7 +248,7 @@ export default function Experience() {
                     </span>
                   </div>
 
-                  <p className="mt-5 text-justify leading-7 text-slate-400">
+                  <p className="mt-7 text-left text-lg leading-8 text-slate-400 md:text-justify">
                     Developed and maintained software applications, supported
                     application deployment and troubleshooting, worked with
                     databases and application data, and helped users resolve
@@ -296,7 +296,7 @@ export default function Experience() {
                     </span>
                   </div>
 
-                  <p className="mt-5 text-justify leading-7 text-slate-400">
+                  <p className="mt-7 text-lg leading-8 text-slate-400 md:text-justify">
                     Administered video conferencing and communication systems,
                     monitored service availability, diagnosed technical problems,
                     provided technical support, and maintained reliable

@@ -15,20 +15,20 @@ export default function About() {
                         <span className="text-cyan-400"> strategic mindset.</span>
                       </h2>
         
-                      <p className="mt-7 text-justify leading-8 text-slate-400">
+                      <p className="mt-7 max-w-2xl text-left text-lg leading-8 text-slate-400 md:text-justify">
                         I am an ICT professional with experience across IT infrastructure,
                         networking, systems administration, software development, and
                         technology management.
                       </p>
         
-                      <p className="mt-5 leading-8 text-justify text-slate-400">
+                      <p className="mt-7 max-w-2xl text-left text-lg leading-8 text-slate-400 md:text-justify">
                         My approach combines technical problem-solving with business and
                         organizational thinking. I focus on building technology environments
                         that are secure, reliable, scalable, and aligned with organizational
                         objectives.
                       </p>
         
-                      <p className="mt-5 text-justify leading-8 text-slate-400">
+                      <p className="mt-7 max-w-2xl text-left text-lg leading-8 text-slate-400 md:text-justify">
                         From network architecture and server administration to modern web
                         applications and digital transformation initiatives, I enjoy solving
                         complex technology challenges.

@@ -9,17 +9,16 @@ export default function Projects() {
     >
       <div className="mx-auto max-w-7xl">
         {/* Section Header */}
-        <div className="max-w-3xl">
+        <div>
           <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-400">
             Featured Work
           </p>
 
           <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">
-            Selected projects &{" "}
-            <span className="text-cyan-400">case studies.</span>
+            Selected projects
           </h2>
 
-          <p className="mt-6 text-justify leading-8 text-slate-400">
+          <p className="mt-7 text-left text-lg leading-8 text-slate-400 md:text-justify">
             A selection of professional, academic, and web development
             projects demonstrating my experience in technology, systems,
             software development, and digital solutions.
@@ -50,7 +49,7 @@ export default function Projects() {
                   Personal Portfolio Website
                 </h3>
 
-                <p className="mt-4 text-justify text-sm leading-7 text-slate-400">
+                <p className="mt-7 max-w-2xl text-left text-lg leading-8 text-slate-400 md:text-justify">
                   A professional portfolio website designed to present my
                   experience, technical expertise, projects, education, and
                   professional background.
@@ -105,7 +104,7 @@ export default function Projects() {
                   Wadla Woreda Website
                 </h3>
 
-                <p className="mt-4 text-justify text-sm leading-7 text-slate-400">
+                <p className="mt-7 max-w-2xl text-left text-lg leading-8 text-slate-400 md:text-justify">
                   A modern website developed to provide information about
                   Wadla Woreda, its administration, services, and activities
                   through a structured digital platform.
@@ -160,7 +159,7 @@ export default function Projects() {
                   Kone High School Foundation Website
                 </h3>
 
-                <p className="mt-4 text-justify text-sm leading-7 text-slate-400">
+                <p className="mt-7 max-w-2xl text-left text-lg leading-8 text-slate-400 md:text-justify">
                   A website project developed for the Kone High School
                   Foundation to present its purpose, activities, and
                   information through a dedicated online platform.
@@ -199,7 +198,7 @@ export default function Projects() {
                   Deep Learning-Based OCR for Printed Amharic Documents
                 </h3>
 
-                <p className="mt-4 text-justify text-sm leading-7 text-slate-400">
+                <p className="mt-7 max-w-2xl text-left text-lg leading-8 text-slate-400 md:text-justify">
                   An MSc research project focused on converting printed Amharic
                   documents into editable digital text using deep
                   learning-based OCR techniques.

@@ -4,7 +4,7 @@ export default function Expertise() {
     return(
         <section id="expertise" className="border-t border-white/10 px-6 py-28">
         <div className="mx-auto max-w-7xl">
-          <div className="max-w-3xl">
+          <div>
             <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-400">
               Expertise
             </p>
@@ -14,7 +14,7 @@ export default function Expertise() {
               <span className="text-cyan-400"> multiple domains.</span>
             </h2>
 
-            <p className="mt-6 text-justify leading-8 text-slate-400">
+            <p className="mt-7 text-left text-lg leading-8 text-slate-400 md:text-justify">
               A combination of infrastructure, engineering, security, and
               management capabilities enables me to approach technology challenges
               from both technical and strategic perspectives.
