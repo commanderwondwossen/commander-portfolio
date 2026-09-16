@@ -1,329 +1,177 @@
-import Image from "next/image";
-import Reveal from "./Reveal";
 export default function Experience() {
-    return(
-        <section
-        id="experience"
-        className="border-t border-white/10 px-6 py-28"
-      >
-        <div className="mx-auto max-w-7xl">
-          <div>
-            <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-400">
-              Experience
-            </p>
+  const experiences = [
+    {
+      number: "01",
+      period: "December 2017 — October 2022 & October 2025 — Present",
+      title: "ICT Research and Training Professional",
+      category: "ICT Operations",
+      description:
+        "Supporting reliable digital operations through IT systems and network troubleshooting, user support, security, backup and recovery, ICT training, technical documentation, and continuous technical improvement.",
+      skills: [
+        "ICT Support",
+        "Networking",
+        "Security",
+        "Backup & Recovery",
+        "Training",
+      ],
+    },
+    {
+      number: "02",
+      period: "January 2008 — April 2021",
+      title: "ICT Team Leader — By Delegation",
+      category: "Leadership",
+      description:
+        "Served as ICT Team Leader by delegation while continuing my regular position, coordinating ICT operations, supervising technical activities, assigning tasks, and supporting infrastructure deployment, troubleshooting, and user services.",
+      skills: [
+        "ICT Leadership",
+        "Team Coordination",
+        "Infrastructure",
+        "Technical Support",
+      ],
+    },
+    {
+      number: "03",
+      period: "October 2022 — October 2025",
+      title: "Network Administration Professional",
+      category: "Networking",
+      description:
+        "Administered LAN and WAN environments, configured routers, switches, and access points, monitored network performance, resolved connectivity incidents, and supported secure and reliable network access.",
+      skills: [
+        "Cisco",
+        "Routing",
+        "Switching",
+        "LAN/WAN",
+        "Network Security",
+      ],
+    },
+    {
+      number: "04",
+      period: "September 2013 — December 2017",
+      title: "System Development and Administration Professional",
+      category: "Systems",
+      description:
+        "Administered Windows Server environments and IT infrastructure, managed user accounts and permissions, monitored system performance, supported applications and databases, and implemented backup and recovery procedures.",
+      skills: [
+        "Windows Server",
+        "Active Directory",
+        "DNS",
+        "DHCP",
+        "Backup",
+      ],
+    },
+    {
+      number: "05",
+      period: "January 2009 — August 2013",
+      title: "Software Development and Administration Professional",
+      category: "Development",
+      description:
+        "Developed and maintained software applications, supported application deployment and troubleshooting, worked with databases and application data, and helped users resolve application-related issues.",
+      skills: [
+        "Software Development",
+        "Databases",
+        "Application Support",
+        "System Administration",
+      ],
+    },
+    {
+      number: "06",
+      period: "August 2006 — February 2009",
+      title: "Video Conference Administration Technician",
+      category: "Communication",
+      description:
+        "Administered video conferencing and communication systems, monitored service availability, diagnosed technical problems, provided technical support, and maintained reliable communication services.",
+      skills: [
+        "Video Conferencing",
+        "Technical Support",
+        "System Monitoring",
+        "Service Continuity",
+      ],
+    },
+  ];
 
-            <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">
-              A career built around
-              <span className="text-cyan-400"> technology.</span>
-            </h2>
+  return (
+    <section
+      id="experience"
+      className="border-t border-white/10 px-4 py-20 sm:px-6 sm:py-28"
+    >
+      <div className="mx-auto max-w-7xl">
+        {/* Section heading */}
+        <div className="max-w-3xl">
+          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-400">
+            Experience
+          </p>
 
-            <p className="mt-7 text-left text-lg leading-8 text-slate-400 md:text-justify">
-              More than two decades of progressive experience across ICT operations,
-              networking, systems administration, software development, technical
-              support, and ICT leadership.
-            </p>
-          </div>
+          <h2 className="text-3xl font-bold tracking-tight sm:text-5xl">
+            A career built around
+            <span className="text-cyan-400"> technology.</span>
+          </h2>
 
-          <div className="relative mt-16">
-            {/* Timeline line */}
-            <div className="absolute left-[7px] top-2 hidden h-[calc(100%-20px)] w-px bg-white/10 md:block" />
+          <p className="mt-6 text-base leading-7 text-slate-400 sm:text-lg sm:leading-8">
+            More than two decades of progressive experience across ICT
+            operations, networking, systems administration, software
+            development, technical support, and ICT leadership.
+          </p>
+        </div>
 
-            <div className="space-y-10">
+        {/* Timeline */}
+        <div className="relative mt-12 sm:mt-16">
+          {/* Timeline line */}
+          <div className="absolute left-[7px] top-2 hidden h-[calc(100%-20px)] w-px bg-white/10 md:block" />
 
-              {/* Experience 1 */}
-              <div className="relative grid gap-6 md:grid-cols-[180px_1fr] md:gap-12">
+          <div className="space-y-8 sm:space-y-10">
+            {experiences.map((experience) => (
+              <div
+                key={experience.number}
+                className="relative grid gap-5 md:grid-cols-[180px_minmax(0,1fr)] md:gap-10"
+              >
+                {/* Date */}
                 <div className="relative">
-                  <div className="text-sm font-semibold text-cyan-400">
-                    December 2017 — October 2022 & October 2025 — Present
+                  <div className="text-sm font-semibold leading-6 text-cyan-400">
+                    {experience.period}
                   </div>
 
+                  {/* Timeline dot */}
                   <div className="absolute -left-[3px] top-8 hidden h-4 w-4 rounded-full border-4 border-slate-950 bg-cyan-400 md:block" />
                 </div>
 
-                <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-7 transition hover:border-cyan-400/30">
-                  <div className="flex flex-col justify-between gap-3 sm:flex-row">
-                    <div>
-                      <h3 className="text-xl font-bold">
-                        ICT Research and Training Professional
-                      </h3>                      
-                    </div>
+                {/* Experience card */}
+                <div className="min-w-0 rounded-3xl border border-white/10 bg-white/[0.03] p-5 transition duration-300 hover:border-cyan-400/30 hover:bg-white/[0.05] sm:p-7">
+                  <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+                    <div className="min-w-0">
+                      <div className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
+                        {experience.number}
+                      </div>
 
-                    <span className="h-fit rounded-full bg-cyan-400/10 px-3 py-1 text-xs text-cyan-300">
-                      ICT Operations
-                    </span>
-                  </div>
-
-                  <p className="mt-7 text-left text-lg leading-8 text-slate-400 md:text-justify">
-                    Supporting reliable digital operations through IT systems and
-                    network troubleshooting, user support, security, backup and
-                    recovery, ICT training, technical documentation, and continuous
-                    technical improvement.
-                  </p>
-
-                  <div className="mt-4 flex flex-wrap gap-2">
-                    {[
-                      "ICT Support",
-                      "Networking",
-                      "Security",
-                      "Backup & Recovery",
-                      "Training",
-                    ].map((item) => (
-                      <span
-                        key={item}
-                        className="rounded-full bg-slate-900 px-3 py-1.5 text-xs text-slate-400"
-                      >
-                        {item}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-
-              {/* Experience 2 */}
-              <div className="relative grid gap-6 md:grid-cols-[180px_1fr] md:gap-12">
-                <div className="relative">
-                  <div className="text-sm font-semibold text-cyan-400">
-                    January 2008 — April 2021
-                  </div>
-
-                  <div className="absolute -left-[3px] top-8 hidden h-4 w-4 rounded-full border-4 border-slate-950 bg-cyan-400 md:block" />
-                </div>
-
-                <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-7 transition hover:border-cyan-400/30">
-                  <div className="flex flex-col justify-between gap-3 sm:flex-row">
-                    <div>
-                      <h3 className="text-xl font-bold">
-                        ICT Team Leader — By Delegation
-                      </h3>                    
-                    </div>
-
-                    <span className="h-fit rounded-full bg-cyan-400/10 px-3 py-1 text-xs text-cyan-300">
-                      Leadership
-                    </span>
-                  </div>
-
-                  <p className="mt-7 text-left text-lg leading-8 text-slate-400 md:text-justify">
-                    Served as ICT Team Leader by delegation while continuing my regular
-                    position, coordinating ICT operations, supervising technical activities, 
-                    assigning tasks, and supporting infrastructure deployment, troubleshooting, 
-                    and user services.
-                  </p>
-
-                  <div className="mt-4 flex flex-wrap gap-2">
-                    {[
-                      "ICT Leadership",
-                      "Team Coordination",
-                      "Infrastructure",
-                      "Technical Support",
-                    ].map((item) => (
-                      <span
-                        key={item}
-                        className="rounded-full bg-slate-900 px-3 py-1.5 text-xs text-slate-400"
-                      >
-                        {item}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-
-              {/* Experience 3 */}
-              <div className="relative grid gap-6 md:grid-cols-[180px_1fr] md:gap-12">
-                <div className="relative">
-                  <div className="text-sm font-semibold text-cyan-400">
-                    October 2022 — October 2025
-                  </div>
-
-                  <div className="absolute -left-[3px] top-8 hidden h-4 w-4 rounded-full border-4 border-slate-950 bg-cyan-400 md:block" />
-                </div>
-
-                <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-7 transition hover:border-cyan-400/30">
-                  <div className="flex flex-col justify-between gap-3 sm:flex-row">
-                    <div>
-                      <h3 className="text-xl font-bold">
-                        Network Administration Professional
-                      </h3>                      
-                    </div>
-
-                    <span className="h-fit rounded-full bg-cyan-400/10 px-3 py-1 text-xs text-cyan-300">
-                      Networking
-                    </span>
-                  </div>
-
-                  <p className="mt-7 text-left text-lg leading-8 text-slate-400 md:text-justify">
-                    Administered LAN and WAN environments, configured routers,
-                    switches, and access points, monitored network performance,
-                    resolved connectivity incidents, and supported secure and
-                    reliable network access.
-                  </p>
-
-                  <div className="mt-4 flex flex-wrap gap-2">
-                    {[
-                      "Cisco",
-                      "Routing",
-                      "Switching",
-                      "LAN/WAN",
-                      "Network Security",
-                    ].map((item) => (
-                      <span
-                        key={item}
-                        className="rounded-full bg-slate-900 px-3 py-1.5 text-xs text-slate-400"
-                      >
-                        {item}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-
-              {/* Experience 4 */}
-              <div className="relative grid gap-6 md:grid-cols-[180px_1fr] md:gap-12">
-                <div className="relative">
-                  <div className="text-sm font-semibold text-cyan-400">
-                    September 2013 — December 2017
-                  </div>
-
-                  <div className="absolute -left-[3px] top-8 hidden h-4 w-4 rounded-full border-4 border-slate-950 bg-cyan-400 md:block" />
-                </div>
-
-                <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-7 transition hover:border-cyan-400/30">
-                  <div className="flex flex-col justify-between gap-3 sm:flex-row">
-                    <div>
-                      <h3 className="text-xl font-bold">
-                        System Development and Administration Professional
-                      </h3>                     
-                    </div>
-
-                    <span className="h-fit rounded-full bg-cyan-400/10 px-3 py-1 text-xs text-cyan-300">
-                      Systems
-                    </span>
-                  </div>
-
-                  <p className="mt-7 text-left text-lg leading-8 text-slate-400 md:text-justify">
-                    Administered Windows Server environments and IT infrastructure,
-                    managed user accounts and permissions, monitored system
-                    performance, supported applications and databases, and
-                    implemented backup and recovery procedures.
-                  </p>
-
-                  <div className="mt-4 flex flex-wrap gap-2">
-                    {[
-                      "Windows Server",
-                      "Active Directory",
-                      "DNS",
-                      "DHCP",
-                      "Backup",
-                    ].map((item) => (
-                      <span
-                        key={item}
-                        className="rounded-full bg-slate-900 px-3 py-1.5 text-xs text-slate-400"
-                      >
-                        {item}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-
-              {/* Experience 5 */}
-              <div className="relative grid gap-6 md:grid-cols-[180px_1fr] md:gap-12">
-                <div className="relative">
-                  <div className="text-sm font-semibold text-cyan-400">
-                    January 2009 —  August 2013
-                  </div>
-
-                  <div className="absolute -left-[3px] top-8 hidden h-4 w-4 rounded-full border-4 border-slate-950 bg-cyan-400 md:block" />
-                </div>
-
-                <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-7 transition hover:border-cyan-400/30">
-                  <div className="flex flex-col justify-between gap-3 sm:flex-row">
-                    <div>
-                      <h3 className="text-xl font-bold">
-                        Software Development and Administration Professional
+                      <h3 className="text-lg font-bold leading-7 sm:text-xl">
+                        {experience.title}
                       </h3>
                     </div>
 
-                    <span className="h-fit rounded-full bg-cyan-400/10 px-3 py-1 text-xs text-cyan-300">
-                      Development
+                    <span className="w-fit shrink-0 rounded-full bg-cyan-400/10 px-3 py-1 text-xs text-cyan-300">
+                      {experience.category}
                     </span>
                   </div>
 
-                  <p className="mt-7 text-left text-lg leading-8 text-slate-400 md:text-justify">
-                    Developed and maintained software applications, supported
-                    application deployment and troubleshooting, worked with
-                    databases and application data, and helped users resolve
-                    application-related issues.
+                  <p className="mt-5 text-base leading-7 text-slate-400 sm:mt-6 sm:text-lg sm:leading-8">
+                    {experience.description}
                   </p>
 
                   <div className="mt-4 flex flex-wrap gap-2">
-                    {[
-                      "Software Development",
-                      "Databases",
-                      "Application Support",
-                      "System Administration",
-                    ].map((item) => (
+                    {experience.skills.map((skill) => (
                       <span
-                        key={item}
+                        key={skill}
                         className="rounded-full bg-slate-900 px-3 py-1.5 text-xs text-slate-400"
                       >
-                        {item}
+                        {skill}
                       </span>
                     ))}
                   </div>
                 </div>
               </div>
-
-              {/* Experience 6 */}
-              <div className="relative grid gap-6 md:grid-cols-[180px_1fr] md:gap-12">
-                <div className="relative">
-                  <div className="text-sm font-semibold text-cyan-400">
-                    August 2006 — Februrary 2009
-                  </div>
-
-                  <div className="absolute -left-[3px] top-8 hidden h-4 w-4 rounded-full border-4 border-slate-950 bg-cyan-400 md:block" />
-                </div>
-
-                <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-7 transition hover:border-cyan-400/30">
-                  <div className="flex flex-col justify-between gap-3 sm:flex-row">
-                    <div>
-                      <h3 className="text-xl font-bold">
-                        Video Conference Administration Technician
-                      </h3>                   
-                    </div>
-
-                    <span className="h-fit rounded-full bg-cyan-400/10 px-3 py-1 text-xs text-cyan-300">
-                      Communication
-                    </span>
-                  </div>
-
-                  <p className="mt-7 text-lg leading-8 text-slate-400 md:text-justify">
-                    Administered video conferencing and communication systems,
-                    monitored service availability, diagnosed technical problems,
-                    provided technical support, and maintained reliable
-                    communication services.
-                  </p>
-
-                  <div className="mt-4 flex flex-wrap gap-2">
-                    {[
-                      "Video Conferencing",
-                      "Technical Support",
-                      "System Monitoring",
-                      "Service Continuity",
-                    ].map((item) => (
-                      <span
-                        key={item}
-                        className="rounded-full bg-slate-900 px-3 py-1.5 text-xs text-slate-400"
-                      >
-                        {item}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-
-            </div>
+            ))}
           </div>
         </div>
-      </section>
-    )
+      </div>
+    </section>
+  );
 }

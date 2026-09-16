@@ -1,129 +1,143 @@
 import Image from "next/image";
 import Reveal from "./Reveal";
 
+const capabilities = [
+  "Networking",
+  "IT Infrastructure",
+  "Systems Administration",
+  "Cybersecurity",
+  "Web Technology",
+  "ICT Management",
+];
+
 export default function Hero() {
   return (
     <section className="relative flex min-h-screen items-center overflow-hidden">
-      {/* Background effects */}
-      <div className="absolute left-1/4 top-1/4 h-72 w-72 rounded-full bg-cyan-500/10 blur-3xl" />
-      <div className="absolute bottom-1/4 right-1/4 h-72 w-72 rounded-full bg-blue-500/10 blur-3xl" />
+      {/* Background */}
+      <div className="absolute inset-0 bg-slate-950" />
 
-      <div className="relative mx-auto grid w-full max-w-7xl items-center gap-14 px-4 py-24 sm:gap-16 sm:px-6 sm:py-28 lg:grid-cols-2 lg:gap-12 lg:py-32">
-        {/* Hero Text */}
-        <Reveal direction="left">
-          <div className="min-w-0">
-            {/* Professional Title */}
-            <p className="mb-4 text-xs font-semibold uppercase tracking-[0.25em] text-cyan-400 sm:mb-5 sm:text-sm sm:tracking-[0.3em]">
-              Information Technology Professional
-            </p>
+      <div className="absolute -left-40 top-1/4 h-96 w-96 rounded-full bg-cyan-500/10 blur-3xl" />
 
-            {/* Name */}
-            <h1 className="text-4xl font-bold leading-[1.08] tracking-tight sm:text-6xl lg:text-7xl">
-              Commander Wondwossen
-              <span className="block text-cyan-400">Atnafu</span>
-            </h1>
+      <div className="absolute -right-40 bottom-0 h-[500px] w-[500px] rounded-full bg-blue-500/10 blur-3xl" />
 
-            {/* Main Statement */}
-            <p className="mt-5 text-xl font-medium leading-8 text-slate-200 sm:text-2xl">
-              Building reliable and secure technology solutions.
-            </p>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_75%_45%,rgba(34,211,238,0.08),transparent_32%)]" />
 
-            {/* Description */}
-            <p className="mt-6 max-w-2xl text-base leading-7 text-slate-400 sm:mt-7 sm:text-lg sm:leading-8">
-              I design, implement, and manage secure and scalable technology
-              solutions across networking, IT infrastructure, systems
-              administration, software development, cybersecurity, and ICT
-              management.
-            </p>
+      {/* Main Content */}
+      <div className="relative mx-auto w-full max-w-7xl px-4 pb-16 pt-28 sm:px-6 sm:pb-20 sm:pt-32 lg:pb-24">
+        <div className="grid items-center gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
+          {/* Profile Image */}
+          <Reveal direction="left">
+            <div className="relative mx-auto w-full max-w-[460px]">
+              {/* Image glow */}
+              <div className="absolute inset-10 rounded-[2rem] bg-cyan-400/10 blur-3xl" />
 
-            {/* Buttons */}
-            <div className="mt-8 flex flex-col gap-3 sm:mt-9 sm:flex-row sm:flex-wrap sm:gap-4">
-              <a
-                href="#projects"
-                className="inline-flex items-center justify-center rounded-full bg-cyan-400 px-7 py-3 font-semibold text-slate-950 transition duration-300 hover:bg-cyan-300"
-              >
-                Explore My Work →
-              </a>
+              {/* Decorative frame */}
+              <div className="absolute -left-3 -top-3 h-24 w-24 rounded-tl-[2rem] border-l border-t border-cyan-400/40" />
 
-              <a
-                href="#contact"
-                className="inline-flex items-center justify-center rounded-full border border-white/20 px-7 py-3 font-semibold text-white transition duration-300 hover:border-cyan-400 hover:text-cyan-400"
-              >
-                Contact Me
-              </a>
+              <div className="absolute -bottom-3 -right-3 h-24 w-24 rounded-br-[2rem] border-b border-r border-cyan-400/40" />
+
+              {/* Portrait */}
+              <div className="relative overflow-hidden rounded-[2rem] border border-cyan-400/20 bg-slate-900 shadow-2xl shadow-cyan-500/10">
+                <div className="relative aspect-[4/5] w-full">
+                  <Image
+                    src="/profile.jpg"
+                    alt="Commander Wondwossen Atnafu"
+                    fill
+                    priority
+                    sizes="(max-width: 1024px) 90vw, 42vw"
+                    className="object-cover"
+                  />
+
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent" />
+                </div>
+
+                {/* Image label */}
+                <div className="absolute bottom-5 left-5 rounded-xl border border-white/10 bg-slate-950/80 px-4 py-3 backdrop-blur-md">
+                  <p className="text-xs font-medium uppercase tracking-[0.2em] text-cyan-400">
+                    IT Professional
+                  </p>
+                </div>
+              </div>
             </div>
+          </Reveal>
 
-            {/* Areas of Expertise */}
-            <div className="mt-10 flex flex-wrap gap-2.5 sm:mt-12 sm:gap-3">
-              {[
-                "Networking",
-                "Infrastructure",
-                "Systems",
-                "Cybersecurity",
-                "Web Technology",
-                "ICT Management",
-              ].map((skill) => (
-                <span
-                  key={skill}
-                  className="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs text-slate-300 transition hover:border-cyan-400/30 hover:text-cyan-300 sm:px-4 sm:py-2 sm:text-sm"
-                >
-                  {skill}
+          {/* Introduction */}
+          <Reveal direction="right">
+            <div className="max-w-2xl">
+              <p className="text-xs font-semibold uppercase tracking-[0.28em] text-cyan-400 sm:text-sm sm:tracking-[0.3em]">
+                ICT & IT Infrastructure Professional
+              </p>
+
+              <h1 className="mt-5 text-4xl font-bold leading-[1.05] tracking-tight sm:text-6xl lg:text-7xl">
+                Commander
+                <span className="block text-cyan-400">
+                  Wondwossen Atnafu
                 </span>
-              ))}
+              </h1>
+
+              <h2 className="mt-6 max-w-xl text-xl font-medium leading-8 text-slate-200 sm:text-2xl">
+                Building reliable and secure technology solutions.
+              </h2>
+
+              <p className="mt-6 max-w-2xl text-base leading-7 text-slate-400 sm:text-lg sm:leading-8">
+                I design, implement, and manage technology solutions across
+                networking, IT infrastructure, systems administration,
+                cybersecurity, software development, and ICT management.
+              </p>
+
+              {/* Actions */}
+              <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+                <a
+                  href="#projects"
+                  className="inline-flex items-center justify-center rounded-xl bg-cyan-400 px-7 py-3.5 font-semibold text-slate-950 transition duration-300 hover:-translate-y-0.5 hover:bg-cyan-300"
+                >
+                  Explore My Work
+                  <span className="ml-2">→</span>
+                </a>
+
+                <a
+                  href="#contact"
+                  className="inline-flex items-center justify-center rounded-xl border border-white/15 px-7 py-3.5 font-semibold text-white transition duration-300 hover:border-cyan-400/50 hover:text-cyan-400"
+                >
+                  Let's Connect
+                </a>
+              </div>
+
+              {/* Professional focus */}
+              <div className="mt-10 flex flex-wrap gap-x-6 gap-y-3 text-sm text-slate-500">
+                <span>Infrastructure</span>
+                <span className="text-cyan-400/60">•</span>
+                <span>Networking</span>
+                <span className="text-cyan-400/60">•</span>
+                <span>Cybersecurity</span>
+                <span className="text-cyan-400/60">•</span>
+                <span>Software</span>
+              </div>
             </div>
-          </div>
-        </Reveal>
+          </Reveal>
+        </div>
 
-        {/* Professional Photo */}
-        <Reveal direction="right">
-          <div className="relative mx-auto flex h-[340px] w-full max-w-[340px] items-center justify-center sm:h-[450px] sm:max-w-[450px]">
-            {/* Background glow */}
-            <div className="absolute h-64 w-64 rounded-full bg-cyan-400/10 blur-3xl sm:h-72 sm:w-72" />
-
-            {/* Outer rings */}
-            <div className="absolute inset-3 rounded-full border border-cyan-400/20 sm:inset-4" />
-            <div className="absolute inset-8 rounded-full border border-cyan-400/10 sm:inset-10" />
-            <div className="absolute inset-12 rounded-full border border-cyan-400/10 sm:inset-16" />
-
-            {/* Photograph */}
-            <div className="relative h-56 w-56 overflow-hidden rounded-full border-2 border-cyan-400/40 bg-slate-900 shadow-2xl shadow-cyan-500/20 sm:h-72 sm:w-72">
-              <Image
-                src="/profile.jpg"
-                alt="Commander Wondwossen Atnafu"
-                fill
-                priority
-                sizes="(max-width: 640px) 224px, 288px"
-                className="object-cover"
-              />
-            </div>
-
-            {/* Network */}
-            <div className="absolute left-0 top-1/2 hidden -translate-y-1/2 rounded-xl border border-white/10 bg-slate-900/80 px-3 py-2 backdrop-blur sm:block sm:left-2 sm:px-4 sm:py-3">
-              <span className="text-xs text-slate-300 sm:text-sm">
-                NETWORK
-              </span>
-            </div>
-
-            {/* Cloud */}
-            <div className="absolute right-0 top-8 rounded-xl border border-white/10 bg-slate-900/80 px-3 py-2 backdrop-blur sm:right-2 sm:top-16 sm:px-4 sm:py-3">
-              <span className="text-xs text-slate-300 sm:text-sm">
-                CLOUD
-              </span>
-            </div>
-
-            {/* Security */}
-            <div className="absolute bottom-8 right-0 rounded-xl border border-white/10 bg-slate-900/80 px-3 py-2 backdrop-blur sm:right-2 sm:bottom-16 sm:px-4 sm:py-3">
-              <span className="text-xs text-slate-300 sm:text-sm">
-                SECURITY
-              </span>
-            </div>
-
-            {/* Systems */}
-            <div className="absolute bottom-2 left-4 rounded-xl border border-white/10 bg-slate-900/80 px-3 py-2 backdrop-blur sm:bottom-8 sm:left-16 sm:px-4 sm:py-3">
-              <span className="text-xs text-slate-300 sm:text-sm">
-                SYSTEMS
-              </span>
-            </div>
+        {/* Capability Strip */}
+        <Reveal direction="up" delay={0.2}>
+          <div className="mt-14 grid grid-cols-2 border-y border-white/10 sm:mt-16 sm:grid-cols-3 lg:grid-cols-6">
+            {capabilities.map((capability, index) => (
+              <div
+                key={capability}
+                className={`px-3 py-4 text-center text-[11px] font-medium uppercase tracking-wider text-slate-500 transition hover:text-cyan-400 sm:px-4 ${
+                  index < 4 ? "border-b border-white/10 sm:border-b-0" : ""
+                } ${
+                  index % 2 === 0
+                    ? "sm:border-r sm:border-white/10"
+                    : ""
+                } ${
+                  index < 3
+                    ? "lg:border-r lg:border-white/10"
+                    : ""
+                }`}
+              >
+                {capability}
+              </div>
+            ))}
           </div>
         </Reveal>
       </div>
