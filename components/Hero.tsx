@@ -101,18 +101,7 @@ export default function Hero() {
                 >
                   Let's Connect
                 </a>
-              </div>
-
-              {/* Professional focus */}
-              <div className="mt-10 flex flex-wrap gap-x-6 gap-y-3 text-sm text-slate-500">
-                <span>Infrastructure</span>
-                <span className="text-cyan-400/60">•</span>
-                <span>Networking</span>
-                <span className="text-cyan-400/60">•</span>
-                <span>Cybersecurity</span>
-                <span className="text-cyan-400/60">•</span>
-                <span>Software</span>
-              </div>
+              </div>         
             </div>
           </Reveal>
         </div>
